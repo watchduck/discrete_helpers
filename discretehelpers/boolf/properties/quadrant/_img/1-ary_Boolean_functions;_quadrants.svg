@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="-50 -50 300 300">
+
+
+<g transform="scale(100, 100)">
+
+    <path fill="#fff" d="m0,0h2v2H0"/>
+
+<path fill="#e30000" d="M0,0h1v1h-1"/>
+<path fill="#0055ff" d="M0,1h1v1h-1"/>
+<path fill="#ffb000" d="M1,0h1v1h-1"/>
+<path fill="#00cc00" d="M1,1h1v1h-1"/>
+
+    <g stroke="#000" stroke-width="2">
+        <path stroke-dasharray=".03, .97" d="M0,1h3M1,0v3"/>
+        <rect x="0" y="0" width="2" height="2" stroke-width=".1" fill="none"/>
+    </g>
+
+    <use xlink:href="#left"/>
+    <use xlink:href="#left" transform="translate(1)"/>
+
+    <use xlink:href="#right"/>
+    <use xlink:href="#right" transform="translate(0, 1)"/>
+
+</g>
+
+
+<g style="text-anchor: middle" font-size="50px" font-family="sans-serif" transform="translate(50, 57)" fill-opacity="0.5">
+    <g><text y="0">0</text><text y="100">1</text></g>
+    <g transform="translate(100)"><text y="0">2</text><text y="100">3</text></g>
+</g>
+
+
+<defs>
+
+    <path id="d0" d="M0,1h1v1H0"/>
+    <path id="d1" d="M0,0h1v3H0"/>
+
+    <g id="b0" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d0"/></g>
+    <g id="b1" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d1"/></g>
+
+    <g id="left" transform="translate(.41)">
+        <use xlink:href="#b0"/>
+        <use xlink:href="#b1" transform="translate(0, 1)"/>
+    </g>
+
+    <g id="right" transform="translate(.53)">
+        <use xlink:href="#b0"/>
+        <use xlink:href="#b1" transform="translate(1)"/>
+    </g>
+
+</defs>
+
+
+</svg>

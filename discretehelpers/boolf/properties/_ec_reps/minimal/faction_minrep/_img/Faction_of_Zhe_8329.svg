@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2010" height="1400">
+
+
+<!-- BINARY MATRICES -->
+
+<!-- red matrix -->
+<g transform="translate(165, 165) scale(50, 50)">
+    <rect width="16" height="24" fill="white"/>
+    <path fill="#eb4e4e" d="M0,0h3v2h1v-2h7v3h1v-3h1v1h1v1h-1v2h1v1h-1v2h1v1h-1v2h1v1h-1v1h2v1h-1v1h1v1h-1v3h1v6h-1v-3h-1v1h-1v-2h-2v2h2v1h-1v1h-11M14,0h1v1h-1M5,2v2h1v2h1v3h1v-3h-1v-2h-1v-2M14,2h1v1h-1M11,4v1h1v-1M3,6v2h1v-2M14,6h1v1h-1M9,8v2h1v2h1v1h1v-1h-1v-2h-1v-2M14,8h1v1h-1M7,10v1h1v-1M5,12v2h1v-2M7,12v3h1v-3M9,14v2h1v-2M11,14v2h1v1h-1v2h1v-1h1v-2h-1v-2M7,16v1h1v-1M6,18v2h1v1h1v-3M13,19v1h1v-1M7,22v1h1v-1"/>
+    <use xlink:href="#matrix-grid"/>
+</g>
+<use transform="translate(165, 165)" xlink:href="#integer-matrix"/>
+
+
+<!-- green matrix -->
+<g transform="translate(1175, 165) scale(50, 50)">
+    <rect width="16" height="24" fill="white"/>
+    <path fill="#36b136" d="M0,0h1v24h-1M3,0h1v2h-1M7,0h1v6h-2v-2h1M13,0h1v1h-1M14,1h1v1h-1M5,2h1v2h-1M11,2h1v1h-1M14,3h1v1h-1M11,4h1v1h-1M13,5h1v2h-1M3,6h1v2h-1M11,6h1v7h-1v-1h-1v-2h1M14,7h1v1h-1M7,8h1v1h-1M9,8h1v2h-1M14,9h1v1h-1M7,10h1v1h-1M13,11h1v2h1v1h-1v1h1v1h-1v2h-2v1h-1v-2h1v-1h1M5,12h1v2h-1M7,14h1v1h-1M9,14h1v2h-1M7,16h1v1h-1M6,18h1v2h-1M14,18h1v6h-1v-2h-1v-1h1v-1h-1v-1h1M7,20h1v1h-1M10,20h1v2h-1M7,22h1v1h-1M12,22h1v2h-2v-1h1"/>
+    <use xlink:href="#matrix-grid"/>
+</g>
+<use transform="translate(1175, 165)" xlink:href="#integer-matrix"/>
+
+
+<!-- LABELS NEXT TO MATRICES -->
+
+<!-- letters above red matrix -->
+<use xlink:href="#bit-labels"/>
+
+<!-- letters above green matrix -->
+<use xlink:href="#bit-labels" transform="translate(1010, 0)"/>
+
+<!-- numbers left of red matrix -->
+<g style="text-anchor: end; letter-spacing: -1;" font-size="30px" font-family="sans-serif" transform="translate(130, 202)" fill="#bc3e3e">
+    <text y="0">22519</text>
+    <text y="50">14327</text>
+    <text y="100">22495</text>
+    <text y="150">8159</text>
+    <text y="200">14271</text>
+    <text y="250">8127</text>
+    <text y="300">24439</text>
+    <text y="350">16247</text>
+    <text y="400">23935</text>
+    <text y="450">7679</text>
+    <text y="500">15231</text>
+    <text y="550" stroke="black" stroke-width=".7px">7167</text>
+    <text y="550">7167</text>
+    <text y="600">30559</text>
+    <text y="650">16223</text>
+    <text y="700">30079</text>
+    <text y="750">13823</text>
+    <text y="800">12159</text>
+    <text y="850">10239</text>
+    <text y="900">30527</text>
+    <text y="950">24383</text>
+    <text y="1000">29567</text>
+    <text y="1050">21503</text>
+    <text y="1100">20351</text>
+    <text y="1150">18431</text>
+</g>
+
+<!-- numbers left of green matrix -->
+<g style="text-anchor: end; letter-spacing: -1;" font-size="30px" font-family="sans-serif" transform="translate(1140, 202)" fill="#2b8d2b">
+    <text y="0">8329</text>
+    <text y="50">16521</text>
+    <text y="100" stroke="black" stroke-width=".7px">2209</text>
+    <text y="100">2209</text>
+    <text y="150">16545</text>
+    <text y="200">2241</text>
+    <text y="250">8385</text>
+    <text y="300">10249</text>
+    <text y="350">18441</text>
+    <text y="400">2689</text>
+    <text y="450">18945</text>
+    <text y="500">3201</text>
+    <text y="550">11265</text>
+    <text y="600">10273</text>
+    <text y="650">24609</text>
+    <text y="700">8833</text>
+    <text y="750">25089</text>
+    <text y="800">12417</text>
+    <text y="850">14337</text>
+    <text y="900">18497</text>
+    <text y="950">24641</text>
+    <text y="1000">17537</text>
+    <text y="1050">25601</text>
+    <text y="1100">20609</text>
+    <text y="1150">22529</text>
+</g>
+
+
+
+<defs>
+
+<!-- defs of matrix grid (black lines) -->
+
+<g id="matrix-grid">
+
+    <g stroke="#000" stroke-width="16">
+        <path stroke-dasharray=".03,  .97" d="M8,0v25"/>
+        <path stroke-dasharray=".1, 5.9" d="M8,-.05v25"/>
+    </g>
+
+    <g stroke="#000" stroke-width="24">
+        <path stroke-dasharray=".03,  .97" d="M0,12h17"/>
+        <path stroke-dasharray=".1, 3.9" d="M-.05,12h17"/>
+    </g>
+
+    <rect x="0" y="0" width="16" height="24" stroke="black" stroke-width=".1" fill="none"/>
+
+</g>
+
+<!-- defs of ABCD labels over red matrix -->
+
+<rect id="bit-label-overline" transform="scale(6)" y="127.5" x="-40" height="0.48747227" width="1.5567663"/>
+<path id="bit-label-a" transform="scale(6)" d="m -39.478453,128.19333 -0.80977,2.5802 h 0.529166 l 0.162783,-0.55862 h 0.725535 l 0.174667,0.55862 h 0.541052 l -0.02791,-0.0822 -0.805635,-2.49804 z m 0.240811,0.80719 0.202057,0.68006 h -0.402043 z"/>
+<path id="bit-label-b" transform="scale(6)" d="m -39.97912,132.69123 v 0.0589 2.52129 h 0.723471 c 0.255693,-0.002 0.415467,-0.005 0.488342,-0.0145 0.112717,-0.0145 0.210216,-0.0576 0.289904,-0.12712 0.07969,-0.0695 0.143851,-0.16323 0.188618,-0.27647 0.04552,-0.11382 0.06873,-0.23165 0.06873,-0.35295 0,-0.15351 -0.03852,-0.29262 -0.108003,-0.40824 -0.05355,-0.0869 -0.128952,-0.14789 -0.215492,-0.19586 0.05578,-0.0478 0.103862,-0.10282 0.141078,-0.17466 0.05501,-0.10534 0.08423,-0.22496 0.08423,-0.35089 0,-0.11576 -0.02474,-0.22337 -0.06873,-0.31781 -0.04405,-0.093 -0.09894,-0.16868 -0.166399,-0.22531 -0.06638,-0.0565 -0.142325,-0.0926 -0.225824,-0.10955 -0.0824,-0.0168 -0.200444,-0.0263 -0.358635,-0.0263 z m 0.496094,0.52968 h 0.182417 c 0.18824,0 0.306279,0.004 0.337446,0.007 0.0584,0.008 0.09507,0.0324 0.119375,0.0667 v 0.001 c 0.02713,0.035 0.03927,0.0782 0.03927,0.14314 0,0.067 -0.01413,0.11309 -0.04496,0.1509 -0.03055,0.0372 -0.07343,0.0618 -0.133842,0.0708 -0.03055,0.004 -0.128624,0.007 -0.284221,0.007 h -0.213423 z m 0,0.9772 h 0.276468 c 0.180626,0 0.299416,0.016 0.337447,0.0336 0.047,0.0211 0.07899,0.0481 0.101804,0.0884 0.02344,0.0405 0.03565,0.0909 0.03565,0.15503 2e-6,0.0765 -0.0149,0.12826 -0.04547,0.16847 -0.03058,0.0414 -0.06646,0.0672 -0.117306,0.0786 v 0.001 h -0.0026 c -0.02712,0.006 -0.121091,0.0129 -0.264583,0.0129 h -0.321426 z"/>
+<path id="bit-label-c" transform="scale(6)" d="m -39.085469,137.1461 c -0.287855,5.7e-4 -0.52679,0.12225 -0.705872,0.36076 -0.180659,0.23932 -0.268613,0.57412 -0.268613,0.99412 0,0.39819 0.08723,0.72232 0.266647,0.9588 0.178269,0.23404 0.411776,0.35297 0.686254,0.35297 0.220813,0 0.40731,-0.0691 0.554905,-0.20781 0.149097,-0.14042 0.253875,-0.35361 0.315695,-0.63138 l 0.01139,-0.0549 -0.484308,-0.19019 -0.0089,0.0628 c -0.0306,0.17239 -0.0846,0.29199 -0.151005,0.3647 -0.06837,0.0748 -0.146741,0.11179 -0.243149,0.11179 -0.132388,0 -0.23132,-0.0585 -0.313735,-0.17842 -0.07811,-0.1143 -0.125436,-0.32145 -0.125436,-0.62547 0,-0.28546 0.04619,-0.48187 0.125436,-0.59607 0.08345,-0.1189 0.186132,-0.17647 0.321556,-0.17647 0.09749,0 0.176251,0.033 0.241177,0.098 0.06605,0.0652 0.110137,0.15208 0.131367,0.26865 l 0.0089,0.0588 0.494098,-0.14514 -0.01455,-0.0607 c -0.04673,-0.20438 -0.117417,-0.36572 -0.215642,-0.48037 -0.160422,-0.18844 -0.3721,-0.28381 -0.623528,-0.28429 z"/>
+<path id="bit-label-d" transform="scale(6)" d="m -40.031165,141.68705 v 0.0589 2.52129 h 0.802018 c 0.151016,0 0.274444,-0.0159 0.37052,-0.0548 0.123711,-0.0491 0.224398,-0.11789 0.300238,-0.2098 0.09831,-0.11836 0.171665,-0.27258 0.223242,-0.45889 0.04281,-0.15463 0.0646,-0.33553 0.0646,-0.54312 0,-0.23526 -0.02254,-0.43469 -0.06666,-0.59996 -0.04514,-0.16498 -0.113554,-0.3058 -0.201538,-0.42117 -0.08881,-0.11599 -0.195795,-0.19804 -0.319876,-0.24339 -0.09446,-0.0344 -0.222523,-0.0491 -0.390158,-0.0491 z m 0.49816,0.5364 h 0.131257 c 0.162047,0 0.271939,0.008 0.317812,0.0222 0.06791,0.0174 0.12105,0.0512 0.16278,0.10025 0.04176,0.0487 0.07664,0.11866 0.101803,0.21343 0.02342,0.0912 0.03721,0.23288 0.03721,0.41961 0,0.18675 -0.01273,0.334 -0.03721,0.43563 -0.02714,0.10333 -0.05862,0.17066 -0.09199,0.20774 v 0.001 c -0.03443,0.0407 -0.08264,0.0702 -0.141075,0.0884 -0.04135,0.0123 -0.119396,0.0222 -0.229444,0.0222 h -0.251148 z"/>
+
+<g id="bit-label-overlines">
+    <use x="0" xlink:href="#bit-label-overline"/>
+    <use x="100" xlink:href="#bit-label-overline"/>
+    <use x="200" xlink:href="#bit-label-overline"/>
+    <use x="300" xlink:href="#bit-label-overline"/>
+    <use x="400" xlink:href="#bit-label-overline"/>
+    <use x="500" xlink:href="#bit-label-overline"/>
+    <use x="600" xlink:href="#bit-label-overline"/>
+    <use x="700" xlink:href="#bit-label-overline"/>
+
+    <g transform="translate(0, 27)">
+        <use x="0" xlink:href="#bit-label-overline"/>
+        <use x="50" xlink:href="#bit-label-overline"/>
+        <use x="200" xlink:href="#bit-label-overline"/>
+        <use x="250" xlink:href="#bit-label-overline"/>
+        <use x="400" xlink:href="#bit-label-overline"/>
+        <use x="450" xlink:href="#bit-label-overline"/>
+        <use x="600" xlink:href="#bit-label-overline"/>
+        <use x="650" xlink:href="#bit-label-overline"/>
+    </g>
+
+    <g transform="translate(0, 54)">
+        <use x="0" xlink:href="#bit-label-overline"/>
+        <use x="50" xlink:href="#bit-label-overline"/>
+        <use x="100" xlink:href="#bit-label-overline"/>
+        <use x="150" xlink:href="#bit-label-overline"/>
+        <use x="400" xlink:href="#bit-label-overline"/>
+        <use x="450" xlink:href="#bit-label-overline"/>
+        <use x="500" xlink:href="#bit-label-overline"/>
+        <use x="550" xlink:href="#bit-label-overline"/>
+    </g>
+
+    <g transform="translate(0, 81)">
+        <use x="0" xlink:href="#bit-label-overline"/>
+        <use x="50" xlink:href="#bit-label-overline"/>
+        <use x="100" xlink:href="#bit-label-overline"/>
+        <use x="150" xlink:href="#bit-label-overline"/>
+        <use x="200" xlink:href="#bit-label-overline"/>
+        <use x="250" xlink:href="#bit-label-overline"/>
+        <use x="300" xlink:href="#bit-label-overline"/>
+        <use x="350" xlink:href="#bit-label-overline"/>
+    </g>
+</g>
+
+<g id="bit-labels" transform="translate(426, -733)" fill-opacity=".5">
+
+    <g fill-opacity=".1">
+
+        <use xlink:href="#bit-label-overlines"/>
+
+        <use x="0" xlink:href="#bit-label-a"/>
+        <use x="100" xlink:href="#bit-label-a"/>
+        <use x="200" xlink:href="#bit-label-a"/>
+        <use x="300" xlink:href="#bit-label-a"/>
+        <use x="400" xlink:href="#bit-label-a"/>
+        <use x="500" xlink:href="#bit-label-a"/>
+        <use x="600" xlink:href="#bit-label-a"/>
+        <use x="700" xlink:href="#bit-label-a"/>
+
+        <use x="0" xlink:href="#bit-label-b"/>
+        <use x="50" xlink:href="#bit-label-b"/>
+        <use x="200" xlink:href="#bit-label-b"/>
+        <use x="250" xlink:href="#bit-label-b"/>
+        <use x="400" xlink:href="#bit-label-b"/>
+        <use x="450" xlink:href="#bit-label-b"/>
+        <use x="600" xlink:href="#bit-label-b"/>
+        <use x="650" xlink:href="#bit-label-b"/>
+
+        <use x="0" xlink:href="#bit-label-c"/>
+        <use x="50" xlink:href="#bit-label-c"/>
+        <use x="100" xlink:href="#bit-label-c"/>
+        <use x="150" xlink:href="#bit-label-c"/>
+        <use x="400" xlink:href="#bit-label-c"/>
+        <use x="450" xlink:href="#bit-label-c"/>
+        <use x="500" xlink:href="#bit-label-c"/>
+        <use x="550" xlink:href="#bit-label-c"/>
+
+        <use x="0" xlink:href="#bit-label-d"/>
+        <use x="50" xlink:href="#bit-label-d"/>
+        <use x="100" xlink:href="#bit-label-d"/>
+        <use x="150" xlink:href="#bit-label-d"/>
+        <use x="200" xlink:href="#bit-label-d"/>
+        <use x="250" xlink:href="#bit-label-d"/>
+        <use x="300" xlink:href="#bit-label-d"/>
+        <use x="350" xlink:href="#bit-label-d"/>
+
+    </g>
+
+    <use x="50" xlink:href="#bit-label-a"/>
+    <use x="150" xlink:href="#bit-label-a"/>
+    <use x="250" xlink:href="#bit-label-a"/>
+    <use x="350" xlink:href="#bit-label-a"/>
+    <use x="450" xlink:href="#bit-label-a"/>
+    <use x="550" xlink:href="#bit-label-a"/>
+    <use x="650" xlink:href="#bit-label-a"/>
+    <use x="750" xlink:href="#bit-label-a"/>
+
+    <use x="100" xlink:href="#bit-label-b"/>
+    <use x="150" xlink:href="#bit-label-b"/>
+    <use x="300" xlink:href="#bit-label-b"/>
+    <use x="350" xlink:href="#bit-label-b"/>
+    <use x="500" xlink:href="#bit-label-b"/>
+    <use x="550" xlink:href="#bit-label-b"/>
+    <use x="700" xlink:href="#bit-label-b"/>
+    <use x="750" xlink:href="#bit-label-b"/>
+
+    <use x="200" xlink:href="#bit-label-c"/>
+    <use x="250" xlink:href="#bit-label-c"/>
+    <use x="300" xlink:href="#bit-label-c"/>
+    <use x="350" xlink:href="#bit-label-c"/>
+    <use x="600" xlink:href="#bit-label-c"/>
+    <use x="650" xlink:href="#bit-label-c"/>
+    <use x="700" xlink:href="#bit-label-c"/>
+    <use x="750" xlink:href="#bit-label-c"/>
+
+    <use x="400" xlink:href="#bit-label-d"/>
+    <use x="450" xlink:href="#bit-label-d"/>
+    <use x="500" xlink:href="#bit-label-d"/>
+    <use x="550" xlink:href="#bit-label-d"/>
+    <use x="600" xlink:href="#bit-label-d"/>
+    <use x="650" xlink:href="#bit-label-d"/>
+    <use x="700" xlink:href="#bit-label-d"/>
+    <use x="750" xlink:href="#bit-label-d"/>
+
+</g>
+
+
+<g id="integer-matrix" style="text-anchor: middle; letter-spacing: -1; fill-opacity: .5;" font-size="25px" font-family="sans-serif" transform="translate(25, 35)">
+    <text y="0" x="0">0</text>
+    <text y="0" x="50">1</text>
+    <text y="0" x="100">2</text>
+    <text y="0" x="150">3</text>
+    <text y="0" x="200">4</text>
+    <text y="0" x="250">5</text>
+    <text y="0" x="300">6</text>
+    <text y="0" x="350">7</text>
+    <text y="0" x="400">8</text>
+    <text y="0" x="450">9</text>
+    <text y="0" x="500">10</text>
+    <text y="0" x="550">11</text>
+    <text y="0" x="600">12</text>
+    <text y="0" x="650">13</text>
+    <text y="0" x="700">14</text>
+    <text y="0" x="750">15</text>
+    <text y="50" x="0">0</text>
+    <text y="50" x="50">2</text>
+    <text y="50" x="100">1</text>
+    <text y="50" x="150">3</text>
+    <text y="50" x="200">4</text>
+    <text y="50" x="250">6</text>
+    <text y="50" x="300">5</text>
+    <text y="50" x="350">7</text>
+    <text y="50" x="400">8</text>
+    <text y="50" x="450">10</text>
+    <text y="50" x="500">9</text>
+    <text y="50" x="550">11</text>
+    <text y="50" x="600">12</text>
+    <text y="50" x="650">14</text>
+    <text y="50" x="700">13</text>
+    <text y="50" x="750">15</text>
+    <text y="100" x="0">0</text>
+    <text y="100" x="50">1</text>
+    <text y="100" x="100">4</text>
+    <text y="100" x="150">5</text>
+    <text y="100" x="200">2</text>
+    <text y="100" x="250">3</text>
+    <text y="100" x="300">6</text>
+    <text y="100" x="350">7</text>
+    <text y="100" x="400">8</text>
+    <text y="100" x="450">9</text>
+    <text y="100" x="500">12</text>
+    <text y="100" x="550">13</text>
+    <text y="100" x="600">10</text>
+    <text y="100" x="650">11</text>
+    <text y="100" x="700">14</text>
+    <text y="100" x="750">15</text>
+    <text y="150" x="0">0</text>
+    <text y="150" x="50">2</text>
+    <text y="150" x="100">4</text>
+    <text y="150" x="150">6</text>
+    <text y="150" x="200">1</text>
+    <text y="150" x="250">3</text>
+    <text y="150" x="300">5</text>
+    <text y="150" x="350">7</text>
+    <text y="150" x="400">8</text>
+    <text y="150" x="450">10</text>
+    <text y="150" x="500">12</text>
+    <text y="150" x="550">14</text>
+    <text y="150" x="600">9</text>
+    <text y="150" x="650">11</text>
+    <text y="150" x="700">13</text>
+    <text y="150" x="750">15</text>
+    <text y="200" x="0">0</text>
+    <text y="200" x="50">4</text>
+    <text y="200" x="100">1</text>
+    <text y="200" x="150">5</text>
+    <text y="200" x="200">2</text>
+    <text y="200" x="250">6</text>
+    <text y="200" x="300">3</text>
+    <text y="200" x="350">7</text>
+    <text y="200" x="400">8</text>
+    <text y="200" x="450">12</text>
+    <text y="200" x="500">9</text>
+    <text y="200" x="550">13</text>
+    <text y="200" x="600">10</text>
+    <text y="200" x="650">14</text>
+    <text y="200" x="700">11</text>
+    <text y="200" x="750">15</text>
+    <text y="250" x="0">0</text>
+    <text y="250" x="50">4</text>
+    <text y="250" x="100">2</text>
+    <text y="250" x="150">6</text>
+    <text y="250" x="200">1</text>
+    <text y="250" x="250">5</text>
+    <text y="250" x="300">3</text>
+    <text y="250" x="350">7</text>
+    <text y="250" x="400">8</text>
+    <text y="250" x="450">12</text>
+    <text y="250" x="500">10</text>
+    <text y="250" x="550">14</text>
+    <text y="250" x="600">9</text>
+    <text y="250" x="650">13</text>
+    <text y="250" x="700">11</text>
+    <text y="250" x="750">15</text>
+    <text y="300" x="0">0</text>
+    <text y="300" x="50">1</text>
+    <text y="300" x="100">2</text>
+    <text y="300" x="150">3</text>
+    <text y="300" x="200">8</text>
+    <text y="300" x="250">9</text>
+    <text y="300" x="300">10</text>
+    <text y="300" x="350">11</text>
+    <text y="300" x="400">4</text>
+    <text y="300" x="450">5</text>
+    <text y="300" x="500">6</text>
+    <text y="300" x="550">7</text>
+    <text y="300" x="600">12</text>
+    <text y="300" x="650">13</text>
+    <text y="300" x="700">14</text>
+    <text y="300" x="750">15</text>
+    <text y="350" x="0">0</text>
+    <text y="350" x="50">2</text>
+    <text y="350" x="100">1</text>
+    <text y="350" x="150">3</text>
+    <text y="350" x="200">8</text>
+    <text y="350" x="250">10</text>
+    <text y="350" x="300">9</text>
+    <text y="350" x="350">11</text>
+    <text y="350" x="400">4</text>
+    <text y="350" x="450">6</text>
+    <text y="350" x="500">5</text>
+    <text y="350" x="550">7</text>
+    <text y="350" x="600">12</text>
+    <text y="350" x="650">14</text>
+    <text y="350" x="700">13</text>
+    <text y="350" x="750">15</text>
+    <text y="400" x="0">0</text>
+    <text y="400" x="50">1</text>
+    <text y="400" x="100">4</text>
+    <text y="400" x="150">5</text>
+    <text y="400" x="200">8</text>
+    <text y="400" x="250">9</text>
+    <text y="400" x="300">12</text>
+    <text y="400" x="350">13</text>
+    <text y="400" x="400">2</text>
+    <text y="400" x="450">3</text>
+    <text y="400" x="500">6</text>
+    <text y="400" x="550">7</text>
+    <text y="400" x="600">10</text>
+    <text y="400" x="650">11</text>
+    <text y="400" x="700">14</text>
+    <text y="400" x="750">15</text>
+    <text y="450" x="0">0</text>
+    <text y="450" x="50">2</text>
+    <text y="450" x="100">4</text>
+    <text y="450" x="150">6</text>
+    <text y="450" x="200">8</text>
+    <text y="450" x="250">10</text>
+    <text y="450" x="300">12</text>
+    <text y="450" x="350">14</text>
+    <text y="450" x="400">1</text>
+    <text y="450" x="450">3</text>
+    <text y="450" x="500">5</text>
+    <text y="450" x="550">7</text>
+    <text y="450" x="600">9</text>
+    <text y="450" x="650">11</text>
+    <text y="450" x="700">13</text>
+    <text y="450" x="750">15</text>
+    <text y="500" x="0">0</text>
+    <text y="500" x="50">4</text>
+    <text y="500" x="100">1</text>
+    <text y="500" x="150">5</text>
+    <text y="500" x="200">8</text>
+    <text y="500" x="250">12</text>
+    <text y="500" x="300">9</text>
+    <text y="500" x="350">13</text>
+    <text y="500" x="400">2</text>
+    <text y="500" x="450">6</text>
+    <text y="500" x="500">3</text>
+    <text y="500" x="550">7</text>
+    <text y="500" x="600">10</text>
+    <text y="500" x="650">14</text>
+    <text y="500" x="700">11</text>
+    <text y="500" x="750">15</text>
+    <text y="550" x="0">0</text>
+    <text y="550" x="50">4</text>
+    <text y="550" x="100">2</text>
+    <text y="550" x="150">6</text>
+    <text y="550" x="200">8</text>
+    <text y="550" x="250">12</text>
+    <text y="550" x="300">10</text>
+    <text y="550" x="350">14</text>
+    <text y="550" x="400">1</text>
+    <text y="550" x="450">5</text>
+    <text y="550" x="500">3</text>
+    <text y="550" x="550">7</text>
+    <text y="550" x="600">9</text>
+    <text y="550" x="650">13</text>
+    <text y="550" x="700">11</text>
+    <text y="550" x="750">15</text>
+    <text y="600" x="0">0</text>
+    <text y="600" x="50">1</text>
+    <text y="600" x="100">8</text>
+    <text y="600" x="150">9</text>
+    <text y="600" x="200">2</text>
+    <text y="600" x="250">3</text>
+    <text y="600" x="300">10</text>
+    <text y="600" x="350">11</text>
+    <text y="600" x="400">4</text>
+    <text y="600" x="450">5</text>
+    <text y="600" x="500">12</text>
+    <text y="600" x="550">13</text>
+    <text y="600" x="600">6</text>
+    <text y="600" x="650">7</text>
+    <text y="600" x="700">14</text>
+    <text y="600" x="750">15</text>
+    <text y="650" x="0">0</text>
+    <text y="650" x="50">2</text>
+    <text y="650" x="100">8</text>
+    <text y="650" x="150">10</text>
+    <text y="650" x="200">1</text>
+    <text y="650" x="250">3</text>
+    <text y="650" x="300">9</text>
+    <text y="650" x="350">11</text>
+    <text y="650" x="400">4</text>
+    <text y="650" x="450">6</text>
+    <text y="650" x="500">12</text>
+    <text y="650" x="550">14</text>
+    <text y="650" x="600">5</text>
+    <text y="650" x="650">7</text>
+    <text y="650" x="700">13</text>
+    <text y="650" x="750">15</text>
+    <text y="700" x="0">0</text>
+    <text y="700" x="50">1</text>
+    <text y="700" x="100">8</text>
+    <text y="700" x="150">9</text>
+    <text y="700" x="200">4</text>
+    <text y="700" x="250">5</text>
+    <text y="700" x="300">12</text>
+    <text y="700" x="350">13</text>
+    <text y="700" x="400">2</text>
+    <text y="700" x="450">3</text>
+    <text y="700" x="500">10</text>
+    <text y="700" x="550">11</text>
+    <text y="700" x="600">6</text>
+    <text y="700" x="650">7</text>
+    <text y="700" x="700">14</text>
+    <text y="700" x="750">15</text>
+    <text y="750" x="0">0</text>
+    <text y="750" x="50">2</text>
+    <text y="750" x="100">8</text>
+    <text y="750" x="150">10</text>
+    <text y="750" x="200">4</text>
+    <text y="750" x="250">6</text>
+    <text y="750" x="300">12</text>
+    <text y="750" x="350">14</text>
+    <text y="750" x="400">1</text>
+    <text y="750" x="450">3</text>
+    <text y="750" x="500">9</text>
+    <text y="750" x="550">11</text>
+    <text y="750" x="600">5</text>
+    <text y="750" x="650">7</text>
+    <text y="750" x="700">13</text>
+    <text y="750" x="750">15</text>
+    <text y="800" x="0">0</text>
+    <text y="800" x="50">4</text>
+    <text y="800" x="100">8</text>
+    <text y="800" x="150">12</text>
+    <text y="800" x="200">1</text>
+    <text y="800" x="250">5</text>
+    <text y="800" x="300">9</text>
+    <text y="800" x="350">13</text>
+    <text y="800" x="400">2</text>
+    <text y="800" x="450">6</text>
+    <text y="800" x="500">10</text>
+    <text y="800" x="550">14</text>
+    <text y="800" x="600">3</text>
+    <text y="800" x="650">7</text>
+    <text y="800" x="700">11</text>
+    <text y="800" x="750">15</text>
+    <text y="850" x="0">0</text>
+    <text y="850" x="50">4</text>
+    <text y="850" x="100">8</text>
+    <text y="850" x="150">12</text>
+    <text y="850" x="200">2</text>
+    <text y="850" x="250">6</text>
+    <text y="850" x="300">10</text>
+    <text y="850" x="350">14</text>
+    <text y="850" x="400">1</text>
+    <text y="850" x="450">5</text>
+    <text y="850" x="500">9</text>
+    <text y="850" x="550">13</text>
+    <text y="850" x="600">3</text>
+    <text y="850" x="650">7</text>
+    <text y="850" x="700">11</text>
+    <text y="850" x="750">15</text>
+    <text y="900" x="0">0</text>
+    <text y="900" x="50">8</text>
+    <text y="900" x="100">1</text>
+    <text y="900" x="150">9</text>
+    <text y="900" x="200">2</text>
+    <text y="900" x="250">10</text>
+    <text y="900" x="300">3</text>
+    <text y="900" x="350">11</text>
+    <text y="900" x="400">4</text>
+    <text y="900" x="450">12</text>
+    <text y="900" x="500">5</text>
+    <text y="900" x="550">13</text>
+    <text y="900" x="600">6</text>
+    <text y="900" x="650">14</text>
+    <text y="900" x="700">7</text>
+    <text y="900" x="750">15</text>
+    <text y="950" x="0">0</text>
+    <text y="950" x="50">8</text>
+    <text y="950" x="100">2</text>
+    <text y="950" x="150">10</text>
+    <text y="950" x="200">1</text>
+    <text y="950" x="250">9</text>
+    <text y="950" x="300">3</text>
+    <text y="950" x="350">11</text>
+    <text y="950" x="400">4</text>
+    <text y="950" x="450">12</text>
+    <text y="950" x="500">6</text>
+    <text y="950" x="550">14</text>
+    <text y="950" x="600">5</text>
+    <text y="950" x="650">13</text>
+    <text y="950" x="700">7</text>
+    <text y="950" x="750">15</text>
+    <text y="1000" x="0">0</text>
+    <text y="1000" x="50">8</text>
+    <text y="1000" x="100">1</text>
+    <text y="1000" x="150">9</text>
+    <text y="1000" x="200">4</text>
+    <text y="1000" x="250">12</text>
+    <text y="1000" x="300">5</text>
+    <text y="1000" x="350">13</text>
+    <text y="1000" x="400">2</text>
+    <text y="1000" x="450">10</text>
+    <text y="1000" x="500">3</text>
+    <text y="1000" x="550">11</text>
+    <text y="1000" x="600">6</text>
+    <text y="1000" x="650">14</text>
+    <text y="1000" x="700">7</text>
+    <text y="1000" x="750">15</text>
+    <text y="1050" x="0">0</text>
+    <text y="1050" x="50">8</text>
+    <text y="1050" x="100">2</text>
+    <text y="1050" x="150">10</text>
+    <text y="1050" x="200">4</text>
+    <text y="1050" x="250">12</text>
+    <text y="1050" x="300">6</text>
+    <text y="1050" x="350">14</text>
+    <text y="1050" x="400">1</text>
+    <text y="1050" x="450">9</text>
+    <text y="1050" x="500">3</text>
+    <text y="1050" x="550">11</text>
+    <text y="1050" x="600">5</text>
+    <text y="1050" x="650">13</text>
+    <text y="1050" x="700">7</text>
+    <text y="1050" x="750">15</text>
+    <text y="1100" x="0">0</text>
+    <text y="1100" x="50">8</text>
+    <text y="1100" x="100">4</text>
+    <text y="1100" x="150">12</text>
+    <text y="1100" x="200">1</text>
+    <text y="1100" x="250">9</text>
+    <text y="1100" x="300">5</text>
+    <text y="1100" x="350">13</text>
+    <text y="1100" x="400">2</text>
+    <text y="1100" x="450">10</text>
+    <text y="1100" x="500">6</text>
+    <text y="1100" x="550">14</text>
+    <text y="1100" x="600">3</text>
+    <text y="1100" x="650">11</text>
+    <text y="1100" x="700">7</text>
+    <text y="1100" x="750">15</text>
+    <text y="1150" x="0">0</text>
+    <text y="1150" x="50">8</text>
+    <text y="1150" x="100">4</text>
+    <text y="1150" x="150">12</text>
+    <text y="1150" x="200">2</text>
+    <text y="1150" x="250">10</text>
+    <text y="1150" x="300">6</text>
+    <text y="1150" x="350">14</text>
+    <text y="1150" x="400">1</text>
+    <text y="1150" x="450">9</text>
+    <text y="1150" x="500">5</text>
+    <text y="1150" x="550">13</text>
+    <text y="1150" x="600">3</text>
+    <text y="1150" x="650">11</text>
+    <text y="1150" x="700">7</text>
+    <text y="1150" x="750">15</text>
+</g>
+</defs>
+
+
+</svg>

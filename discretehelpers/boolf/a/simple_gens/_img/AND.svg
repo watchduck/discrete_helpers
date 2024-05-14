@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="966" height="966" viewBox="-3 -3 966 966">
+
+<g transform="scale(30, 30)">
+
+    <rect width="32" height="32" fill="white"/>
+
+<path fill="#f55" d="M0,0h32v32h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h7v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v7h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h15v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h7v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v7h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v15h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h7v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v7h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h3v-1h-1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1"/>
+
+    <g stroke="#000" stroke-width="32">
+        <path stroke-dasharray=".03,  .97" d="M0,16h33M16,0v33"/>
+        <path stroke-dasharray=".06, 3.94" d="M0,16h33M16,0v33"/>
+        <path stroke-dasharray=".14 ,15.86 " d="M-.07,16h33M16,-.07v33"/>
+        <rect x="0" y="0" width="32" height="32" stroke-width=".14" fill="none"/>
+    </g>
+
+</g>
+
+</svg>

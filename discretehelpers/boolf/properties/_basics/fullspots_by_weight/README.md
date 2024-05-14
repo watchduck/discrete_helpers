@@ -1,0 +1,1 @@
+`layered_fullspots` is similar to [`layered_tt`](../../_layered).

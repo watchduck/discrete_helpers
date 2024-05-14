@@ -1,0 +1,10 @@
+__pycache__/*
+*.py[cod]
+/env/
+/dist/
+/build/
+/.pytest_cache/
+/.idea/
+/*.egg-info/
+
+/tinker*.py

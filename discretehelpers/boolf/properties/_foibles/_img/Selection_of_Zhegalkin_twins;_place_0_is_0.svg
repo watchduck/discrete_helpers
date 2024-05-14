@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1490" height="300" viewBox="-4 -4 149 30">
+
+
+    <defs>
+
+        <g id="grid_8x128" stroke="black">
+            <rect width="128" height="8" fill="none" stroke-width=".35"/>
+            <g stroke-width="128">
+                <path stroke-dasharray=".03,.97" d="M64,0v9"/>
+                <path stroke-dasharray=".07,3.93" d="M64,0v9"/>
+            </g>
+            <g stroke-width="8">
+                <path stroke-dasharray=".03,.97" d="M0,4h129"/>
+                <path stroke-dasharray=".07,3.93" d="M0,4h129"/>
+                <path stroke-dasharray=".15,15.85" d="M-.07,4h129"/>
+                <path stroke-dasharray=".4,31.6" d="M-.2,4h129" stroke-width="8.35"/>
+            </g>
+        </g>
+
+        <g id="grid_8x7" stroke="black">
+            <rect width="7" height="8" fill="none" stroke-width=".3"/>
+            <g stroke-width="8">
+                <path stroke-dasharray=".03,.97" d="M0,4h8"/>
+                <path stroke-dasharray=".07,3.93" d="M0,4h8"/>
+                <path stroke-dasharray=".15,15.85" d="M-.07,4h8"/>
+            </g>
+            <g stroke-width="7">
+                <path stroke-dasharray=".03,.97" d="M3.5,0v9"/>
+                <path stroke-dasharray=".07,3.93" d="M3.5,0v9"/>
+                <path stroke-dasharray=".15,15.85" d="M3.5-.07v9"/>
+            </g>
+        </g>
+
+    </defs>
+
+
+    <!-- upper small -->
+    <g transform="translate(0, 0)">
+        <rect fill="#fff" width="7" height="8"/>
+        <path fill="#e95959" d="M0,1h1v1h-1M1,2h1v1h-1M2,3h1v1h-1M3,4h1v1h-1M4,5h1v1h-1M5,6h1v1h-1M6,7h1v1h-1"/>
+        <use xlink:href="#grid_8x7"/>
+    </g>
+
+    <!-- upper main -->
+    <g transform="translate(13, 0)">
+        <rect fill="#fff" width="128" height="8"/>
+        <path fill="#e95959" d="M1,1h1v1h-1M3,1h1v2h-2v-1h1M5,1h1v1h-1M7,1h1v3h-4v-1h2v-1h1M9,1h1v1h-1M11,1h1v2h-2v-1h1M13,1h1v1h-1M15,1h1v4h-8v-1h4v-1h2v-1h1M17,1h1v1h-1M19,1h1v2h-2v-1h1M21,1h1v1h-1M23,1h1v3h-4v-1h2v-1h1M25,1h1v1h-1M27,1h1v2h-2v-1h1M29,1h1v1h-1M31,1h1v5h-16v-1h8v-1h4v-1h2v-1h1M33,1h1v1h-1M35,1h1v2h-2v-1h1M37,1h1v1h-1M39,1h1v3h-4v-1h2v-1h1M41,1h1v1h-1M43,1h1v2h-2v-1h1M45,1h1v1h-1M47,1h1v4h-8v-1h4v-1h2v-1h1M49,1h1v1h-1M51,1h1v2h-2v-1h1M53,1h1v1h-1M55,1h1v3h-4v-1h2v-1h1M57,1h1v1h-1M59,1h1v2h-2v-1h1M61,1h1v1h-1M63,1h1v6h-32v-1h16v-1h8v-1h4v-1h2v-1h1M65,1h1v1h-1M67,1h1v2h-2v-1h1M69,1h1v1h-1M71,1h1v3h-4v-1h2v-1h1M73,1h1v1h-1M75,1h1v2h-2v-1h1M77,1h1v1h-1M79,1h1v4h-8v-1h4v-1h2v-1h1M81,1h1v1h-1M83,1h1v2h-2v-1h1M85,1h1v1h-1M87,1h1v3h-4v-1h2v-1h1M89,1h1v1h-1M91,1h1v2h-2v-1h1M93,1h1v1h-1M95,1h1v5h-16v-1h8v-1h4v-1h2v-1h1M97,1h1v1h-1M99,1h1v2h-2v-1h1M101,1h1v1h-1M103,1h1v3h-4v-1h2v-1h1M105,1h1v1h-1M107,1h1v2h-2v-1h1M109,1h1v1h-1M111,1h1v4h-8v-1h4v-1h2v-1h1M113,1h1v1h-1M115,1h1v2h-2v-1h1M117,1h1v1h-1M119,1h1v3h-4v-1h2v-1h1M121,1h1v1h-1M123,1h1v2h-2v-1h1M125,1h1v1h-1M127,1h1v7h-64v-1h32v-1h16v-1h8v-1h4v-1h2v-1h1"/>
+        <use xlink:href="#grid_8x128" stroke="#000"/>
+    </g>
+
+    <!-- lower small -->
+    <g transform="translate(0, 14)">
+        <rect fill="#fff" width="7" height="8"/>
+        <path fill="#e95959" d="M0,1h1v1h-1M1,2h1v1h1v1h-3v-1h1M3,4h1v1h1v1h-1v1h1v-1h1v1h1v1h-7v-1h1v-1h1v1h1M0,5h1v1h-1"/>
+        <use xlink:href="#grid_8x7"/>
+    </g>
+
+    <!-- lower main -->
+    <g transform="translate(13, 14)">
+        <rect fill="#fff" width="128" height="8"/>
+        <path fill="#e95959" d="M1,1h1v1h-1M3,1h1v2h-1v1h-2v-1h1v-1h1M5,1h1v1h-1M7,1h1v3h-1v-1h-1v-1h1M9,1h1v1h-1M11,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v4h-1v1h-1v-1h-1v1h1v1h1v1h-2v-1h-1v-2h-1v1h-1v-1h-1v1h1v1h-1v1h-2v-1h-1v-1h1v-1h1v-1h1v-1h1v-1h1M13,1h1v1h-1M17,1h1v1h-1M19,1h1v2h-1v1h-2v-1h1v-1h1M21,1h1v1h-1M23,1h1v3h-1v-1h-1v-1h1M25,1h1v1h-1M27,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v5h-1v-1h-1v2h-1v1h-1v-2h1v-1h-1v1h-1v-1h-1v2h1v1h-2v-1h-2v1h-2v-1h1v-2h1v1h2v-1h-1v-1h1v-1h1v-1h1M29,1h1v1h-1M33,1h1v1h-1M35,1h1v2h-1v1h-2v-1h1v-1h1M37,1h1v1h-1M39,1h1v3h-1v-1h-1v-1h1M41,1h1v1h-1M43,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v4h-1v1h1v-1h1v1h1v1h1v1h-2v-1h-1v1h-1v-1h-1v-2h-1v1h-1v-1h-1v1h1v1h-1v1h-2v-1h1v-2h-1v1h-2v-1h1v-1h1v-1h1v-1h1M45,1h1v1h-1M49,1h1v1h-1M51,1h1v2h-1v1h-2v-1h1v-1h1M53,1h1v1h-1M55,1h1v3h-1v-1h-1v-1h1M57,1h1v1h-1M59,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v6h-1v1h-2v-1h1v-1h1v-1h-1v1h-1v-1h-1v3h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v-1h1v-1h1v-1h1M61,1h1v1h-1M65,1h1v1h-1M67,1h1v2h-1v1h-2v-1h1v-1h1M69,1h1v1h-1M71,1h1v3h-1v-1h-1v-1h1M73,1h1v1h-1M75,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v4h-1v1h-1v-1h-1v1h1v1h-1v1h-1v-3h-1v1h-1v-1h-1v1h1v1h1v1h-2v-1h-2v1h-2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1M77,1h1v1h-1M81,1h1v1h-1M83,1h1v2h-1v1h-2v-1h1v-1h1M85,1h1v1h-1M87,1h1v3h-1v-1h-1v-1h1M89,1h1v1h-1M91,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v5h-1v-1h-1v2h1v1h-2v-1h-1v-1h1v-1h-1v1h-1v-1h-1v2h-1v1h-2v-1h-1v-2h1v1h2v-1h-1v-1h1v-1h1v-1h1M93,1h1v1h-1M97,1h1v1h-1M99,1h1v2h-1v1h-2v-1h1v-1h1M101,1h1v1h-1M103,1h1v3h-1v-1h-1v-1h1M105,1h1v1h-1M107,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v4h-1v1h1v-1h1v1h1v1h-1v1h-1v-1h-1v1h-2v-1h1v-2h-1v1h-1v-1h-1v1h1v2h-1v-1h-1v-2h-1v1h-2v-1h1v-1h1v-1h1v-1h1M109,1h1v1h-1M113,1h1v1h-1M115,1h1v2h-1v1h-2v-1h1v-1h1M117,1h1v1h-1M119,1h1v3h-1v-1h-1v-1h1M121,1h1v1h-1M123,1h1v2h-1v1h1v-1h1v1h2v-1h-1v-1h1v-1h1v7h-1v-1h-1v-1h1v-1h-1v1h-1v-1h-1v2h-1v1h-2v-1h1v-1h1v-1h-1v1h-1v-1h-1v-1h1v-1h1v-1h1M125,1h1v1h-1M4,3h1v1h-1M20,3h1v1h-1M36,3h1v1h-1M52,3h1v1h-1M68,3h1v1h-1M84,3h1v1h-1M100,3h1v1h-1M116,3h1v1h-1M1,5h1v1h-1M3,5h1v2h-1v1h-2v-1h1v-1h1M5,5h1v1h-1M16,5h1v1h-1M18,5h1v1h1v2h-1v-1h-1M20,5h1v1h-1M33,5h1v2h-1v1h-2v-1h1v-1h1M35,5h1v1h-1M37,5h1v2h1v1h-2v-1h-1v-1h1M50,5h1v1h-1M52,5h1v1h1v1h-1v1h-1M54,5h1v1h-1M65,5h1v1h-1M67,5h1v3h-1v-1h-1v-1h1M69,5h1v1h-1M80,5h1v1h-1M82,5h1v1h1v1h-1v1h-2v-1h1M84,5h1v1h-1M97,5h1v2h1v1h-2v-1h-1v-1h1M99,5h1v1h-1M101,5h1v2h-1v1h-1v-2h1M114,5h1v1h-1M116,5h1v1h1v1h1v1h-2v-1h-1M118,5h1v1h-1M4,7h1v1h-1M11,7h1v1h-1M16,7h1v1h-1M35,7h1v1h-1M44,7h1v1h-1M55,7h2v1h-2M64,7h1v1h-1M79,7h1v1h-1M84,7h1v1h-1M91,7h1v1h-1M103,7h2v1h-2M115,7h1v1h-1M124,7h1v1h-1"/>
+        <use xlink:href="#grid_8x128" stroke="#000"/>
+    </g>
+
+
+</svg>

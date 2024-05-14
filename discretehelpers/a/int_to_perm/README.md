@@ -1,0 +1,1 @@
+See also [`rev_colex_perms`](../_rev_colex_perms).

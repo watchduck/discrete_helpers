@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="870" height="870" viewBox="-35 -35 870 870">
+
+<g transform="scale(50, 50)">
+
+    <rect width="16" height="16" fill="white"/>
+
+<path fill="#f00" d="M0,0h1v1h-1M8,1h1v1h-1M4,2h1v1h-1M12,3h1v1h-1M2,4h1v1h-1M10,5h1v1h-1M6,6h1v1h-1M14,7h1v1h-1M1,8h1v1h-1M9,9h1v1h-1M5,10h1v1h-1M13,11h1v1h-1M3,12h1v1h-1M11,13h1v1h-1M7,14h1v1h-1M15,15h1v1h-1"/>
+
+    <g stroke="#000" stroke-width="16">
+        <path stroke-dasharray=".03,  .97" d="M0,8h17M8,0v17"/>
+        <path stroke-dasharray=".1, 3.9" d="M-.05,8h17M8,-.05v17"/>
+        <rect x="0" y="0" width="16" height="16" stroke-width=".1" fill="none"/>
+    </g>
+
+    <use xlink:href="#left" transform="translate(0)"/>
+    <use xlink:href="#left" transform="translate(1)"/>
+    <use xlink:href="#left" transform="translate(2)"/>
+    <use xlink:href="#left" transform="translate(3)"/>
+    <use xlink:href="#left" transform="translate(4)"/>
+    <use xlink:href="#left" transform="translate(5)"/>
+    <use xlink:href="#left" transform="translate(6)"/>
+    <use xlink:href="#left" transform="translate(7)"/>
+    <use xlink:href="#left" transform="translate(8)"/>
+    <use xlink:href="#left" transform="translate(9)"/>
+    <use xlink:href="#left" transform="translate(10)"/>
+    <use xlink:href="#left" transform="translate(11)"/>
+    <use xlink:href="#left" transform="translate(12)"/>
+    <use xlink:href="#left" transform="translate(13)"/>
+    <use xlink:href="#left" transform="translate(14)"/>
+    <use xlink:href="#left" transform="translate(15)"/>
+
+
+    <use xlink:href="#right" transform="translate(0, 0)"/>
+    <use xlink:href="#right" transform="translate(0, 1)"/>
+    <use xlink:href="#right" transform="translate(0, 2)"/>
+    <use xlink:href="#right" transform="translate(0, 3)"/>
+    <use xlink:href="#right" transform="translate(0, 4)"/>
+    <use xlink:href="#right" transform="translate(0, 5)"/>
+    <use xlink:href="#right" transform="translate(0, 6)"/>
+    <use xlink:href="#right" transform="translate(0, 7)"/>
+    <use xlink:href="#right" transform="translate(0, 8)"/>
+    <use xlink:href="#right" transform="translate(0, 9)"/>
+    <use xlink:href="#right" transform="translate(0, 10)"/>
+    <use xlink:href="#right" transform="translate(0, 11)"/>
+    <use xlink:href="#right" transform="translate(0, 12)"/>
+    <use xlink:href="#right" transform="translate(0, 13)"/>
+    <use xlink:href="#right" transform="translate(0, 14)"/>
+    <use xlink:href="#right" transform="translate(0, 15)"/>
+
+</g>
+
+
+<g style="text-anchor: middle; letter-spacing: -1;" font-size="20px" font-family="sans-serif" transform="translate(25, 30)" fill-opacity="0.5">
+
+    <g><text y="0">0</text><text y="50">1</text><text y="100">2</text><text y="150">3</text><text y="200">4</text><text y="250">5</text><text y="300">6</text><text y="350">7</text><text y="400">8</text><text y="450">9</text><text y="500">10</text><text y="550">11</text><text y="600">12</text><text y="650">13</text><text y="700">14</text><text y="750">15</text></g>
+    <g transform="translate(50)"><text y="0">128</text><text y="50">129</text><text y="100">130</text><text y="150">131</text><text y="200">132</text><text y="250">133</text><text y="300">134</text><text y="350">135</text><text y="400">136</text><text y="450">137</text><text y="500">138</text><text y="550">139</text><text y="600">140</text><text y="650">141</text><text y="700">142</text><text y="750">143</text></g>
+    <g transform="translate(100)"><text y="0">64</text><text y="50">65</text><text y="100">66</text><text y="150">67</text><text y="200">68</text><text y="250">69</text><text y="300">70</text><text y="350">71</text><text y="400">72</text><text y="450">73</text><text y="500">74</text><text y="550">75</text><text y="600">76</text><text y="650">77</text><text y="700">78</text><text y="750">79</text></g>
+    <g transform="translate(150)"><text y="0">192</text><text y="50">193</text><text y="100">194</text><text y="150">195</text><text y="200">196</text><text y="250">197</text><text y="300">198</text><text y="350">199</text><text y="400">200</text><text y="450">201</text><text y="500">202</text><text y="550">203</text><text y="600">204</text><text y="650">205</text><text y="700">206</text><text y="750">207</text></g>
+    <g transform="translate(200)"><text y="0">32</text><text y="50">33</text><text y="100">34</text><text y="150">35</text><text y="200">36</text><text y="250">37</text><text y="300">38</text><text y="350">39</text><text y="400">40</text><text y="450">41</text><text y="500">42</text><text y="550">43</text><text y="600">44</text><text y="650">45</text><text y="700">46</text><text y="750">47</text></g>
+    <g transform="translate(250)"><text y="0">160</text><text y="50">161</text><text y="100">162</text><text y="150">163</text><text y="200">164</text><text y="250">165</text><text y="300">166</text><text y="350">167</text><text y="400">168</text><text y="450">169</text><text y="500">170</text><text y="550">171</text><text y="600">172</text><text y="650">173</text><text y="700">174</text><text y="750">175</text></g>
+    <g transform="translate(300)"><text y="0">96</text><text y="50">97</text><text y="100">98</text><text y="150">99</text><text y="200">100</text><text y="250">101</text><text y="300">102</text><text y="350">103</text><text y="400">104</text><text y="450">105</text><text y="500">106</text><text y="550">107</text><text y="600">108</text><text y="650">109</text><text y="700">110</text><text y="750">111</text></g>
+    <g transform="translate(350)"><text y="0">224</text><text y="50">225</text><text y="100">226</text><text y="150">227</text><text y="200">228</text><text y="250">229</text><text y="300">230</text><text y="350">231</text><text y="400">232</text><text y="450">233</text><text y="500">234</text><text y="550">235</text><text y="600">236</text><text y="650">237</text><text y="700">238</text><text y="750">239</text></g>
+    <g transform="translate(400)"><text y="0">16</text><text y="50">17</text><text y="100">18</text><text y="150">19</text><text y="200">20</text><text y="250">21</text><text y="300">22</text><text y="350">23</text><text y="400">24</text><text y="450">25</text><text y="500">26</text><text y="550">27</text><text y="600">28</text><text y="650">29</text><text y="700">30</text><text y="750">31</text></g>
+    <g transform="translate(450)"><text y="0">144</text><text y="50">145</text><text y="100">146</text><text y="150">147</text><text y="200">148</text><text y="250">149</text><text y="300">150</text><text y="350">151</text><text y="400">152</text><text y="450">153</text><text y="500">154</text><text y="550">155</text><text y="600">156</text><text y="650">157</text><text y="700">158</text><text y="750">159</text></g>
+    <g transform="translate(500)"><text y="0">80</text><text y="50">81</text><text y="100">82</text><text y="150">83</text><text y="200">84</text><text y="250">85</text><text y="300">86</text><text y="350">87</text><text y="400">88</text><text y="450">89</text><text y="500">90</text><text y="550">91</text><text y="600">92</text><text y="650">93</text><text y="700">94</text><text y="750">95</text></g>
+    <g transform="translate(550)"><text y="0">208</text><text y="50">209</text><text y="100">210</text><text y="150">211</text><text y="200">212</text><text y="250">213</text><text y="300">214</text><text y="350">215</text><text y="400">216</text><text y="450">217</text><text y="500">218</text><text y="550">219</text><text y="600">220</text><text y="650">221</text><text y="700">222</text><text y="750">223</text></g>
+    <g transform="translate(600)"><text y="0">48</text><text y="50">49</text><text y="100">50</text><text y="150">51</text><text y="200">52</text><text y="250">53</text><text y="300">54</text><text y="350">55</text><text y="400">56</text><text y="450">57</text><text y="500">58</text><text y="550">59</text><text y="600">60</text><text y="650">61</text><text y="700">62</text><text y="750">63</text></g>
+    <g transform="translate(650)"><text y="0">176</text><text y="50">177</text><text y="100">178</text><text y="150">179</text><text y="200">180</text><text y="250">181</text><text y="300">182</text><text y="350">183</text><text y="400">184</text><text y="450">185</text><text y="500">186</text><text y="550">187</text><text y="600">188</text><text y="650">189</text><text y="700">190</text><text y="750">191</text></g>
+    <g transform="translate(700)"><text y="0">112</text><text y="50">113</text><text y="100">114</text><text y="150">115</text><text y="200">116</text><text y="250">117</text><text y="300">118</text><text y="350">119</text><text y="400">120</text><text y="450">121</text><text y="500">122</text><text y="550">123</text><text y="600">124</text><text y="650">125</text><text y="700">126</text><text y="750">127</text></g>
+    <g transform="translate(750)"><text y="0">240</text><text y="50">241</text><text y="100">242</text><text y="150">243</text><text y="200">244</text><text y="250">245</text><text y="300">246</text><text y="350">247</text><text y="400">248</text><text y="450">249</text><text y="500">250</text><text y="550">251</text><text y="600">252</text><text y="650">253</text><text y="700">254</text><text y="750">255</text></g>
+
+</g>
+
+
+
+<defs>
+
+    <path id="d0" d="M0,1h1v1H0"/>
+    <path id="d1" d="M0,0h1v3H0"/>
+
+    <g id="b00" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b01" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b02" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b03" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b04" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b05" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b06" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b07" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d0"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b08" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b09" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b10" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b11" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d0" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b12" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b13" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d0" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+    <g id="b14" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d0" transform="translate(6)"/></g>
+    <g id="b15" transform="translate(0, .74) scale(.04, .04)"><use xlink:href="#d1"/><use xlink:href="#d1" transform="translate(2)"/><use xlink:href="#d1" transform="translate(4)"/><use xlink:href="#d1" transform="translate(6)"/></g>
+
+    <g id="left" transform="translate(.18)">
+        <use xlink:href="#b00"/>
+        <use xlink:href="#b08" transform="translate(0, 1)"/>
+        <use xlink:href="#b04" transform="translate(0, 2)"/>
+        <use xlink:href="#b12" transform="translate(0, 3)"/>
+        <use xlink:href="#b02" transform="translate(0, 4)"/>
+        <use xlink:href="#b10" transform="translate(0, 5)"/>
+        <use xlink:href="#b06" transform="translate(0, 6)"/>
+        <use xlink:href="#b14" transform="translate(0, 7)"/>
+        <use xlink:href="#b01" transform="translate(0, 8)"/>
+        <use xlink:href="#b09" transform="translate(0, 9)"/>
+        <use xlink:href="#b05" transform="translate(0, 10)"/>
+        <use xlink:href="#b13" transform="translate(0, 11)"/>
+        <use xlink:href="#b03" transform="translate(0, 12)"/>
+        <use xlink:href="#b11" transform="translate(0, 13)"/>
+        <use xlink:href="#b07" transform="translate(0, 14)"/>
+        <use xlink:href="#b15" transform="translate(0, 15)"/>
+    </g>
+
+    <g id="right" transform="translate(.54)">
+        <use xlink:href="#b00"/>
+        <use xlink:href="#b01" transform="translate(1)"/>
+        <use xlink:href="#b02" transform="translate(2)"/>
+        <use xlink:href="#b03" transform="translate(3)"/>
+        <use xlink:href="#b04" transform="translate(4)"/>
+        <use xlink:href="#b05" transform="translate(5)"/>
+        <use xlink:href="#b06" transform="translate(6)"/>
+        <use xlink:href="#b07" transform="translate(7)"/>
+        <use xlink:href="#b08" transform="translate(8)"/>
+        <use xlink:href="#b09" transform="translate(9)"/>
+        <use xlink:href="#b10" transform="translate(10)"/>
+        <use xlink:href="#b11" transform="translate(11)"/>
+        <use xlink:href="#b12" transform="translate(12)"/>
+        <use xlink:href="#b13" transform="translate(13)"/>
+        <use xlink:href="#b14" transform="translate(14)"/>
+        <use xlink:href="#b15" transform="translate(15)"/>
+    </g>
+
+</defs>
+
+
+</svg>

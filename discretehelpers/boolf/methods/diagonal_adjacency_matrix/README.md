@@ -1,0 +1,1 @@
+see [test/14_clan_fingerprints](../../test/14_clan_fingerprints)

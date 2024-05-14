@@ -1,0 +1,1 @@
+`layered_tt` is similar to [`layered_fullspots`](../_basics/fullspots_by_weight).

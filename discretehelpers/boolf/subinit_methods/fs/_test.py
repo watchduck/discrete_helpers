@@ -1,0 +1,41 @@
+from discretehelpers.a import abbrev_testing as abbrev
+
+from discretehelpers.boolf import Boolf
+
+from discretehelpers.ex import ArgMismatchError, ArgComboError
+
+
+def test():
+
+    f = Boolf('0')
+    assert Boolf(fullspots=[], arity=0) == f
+    assert Boolf(fullspots=[], arity=1) == f
+    assert Boolf(fullspots=[], arity=2) == f
+    assert Boolf(fullspots=[], atomvals=[]) == f
+    assert Boolf(fullspots=[], atomvals=[123]) == f
+    assert Boolf(fullspots=[], atomvals=[123, 456]) == f
+
+    t = Boolf('1')
+    assert Boolf(fullspots=[0], atomvals=[]) == t
+    assert Boolf(fullspots=[0, 1], atomvals=[1]) == t
+    assert Boolf(fullspots=[0, 1, 2, 3], atomvals=[0, 1]) == t
+    assert Boolf(fullspots=[0, 1, 2, 3, 4, 5, 6, 7], atomvals=[123, 456, 789]) == t
+
+    dense_tt = '0101 0100'
+    assert Boolf(fullspots={1, 3, 5}, atomvals=[0, 1, 2]) == Boolf(dense_tt)
+    assert Boolf(fullspots={1, 3, 5}, arity=3) == Boolf(dense_tt)
+    assert Boolf(fullspots={1, 3, 5}, atomvals=[77, 88, 99]) == Boolf(dense_tt, [77, 88, 99])
+
+    dense_tt += '0000 0000'
+    assert Boolf(fullspots={1, 3, 5}, arity=4) == Boolf(dense_tt)
+
+
+def test_raise():
+
+    abbrev(ArgComboError, [
+        lambda: Boolf(fullspots=[123, 456], atomvals=[3, 4, 5], arity=12345)
+    ])
+
+    abbrev(ArgMismatchError, [
+        lambda: Boolf(fullspots=[123], atomvals=[])
+    ])

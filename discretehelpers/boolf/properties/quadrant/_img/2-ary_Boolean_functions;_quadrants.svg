@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="-50 -50 500 500">
+
+
+<g transform="scale(100, 100)">
+
+    <path fill="#fff" d="m0,0h4v4H0"/>
+
+<path fill="#e30000" d="M0,0h1v1h-1M2,0h1v1h-1M0,2h1v1h-1M2,2h1v1h-1"/>
+<path fill="#0055ff" d="M0,1h1v1h-1M2,1h1v1h-1M0,3h1v1h-1M2,3h1v1h-1"/>
+<path fill="#ffb000" d="M1,0h1v1h-1M3,0h1v1h-1M1,2h1v1h-1M3,2h1v1h-1"/>
+<path fill="#00cc00" d="M1,1h1v1h-1M3,1h1v1h-1M1,3h1v1h-1M3,3h1v1h-1"/>
+
+    <g stroke="#000" stroke-width="4">
+        <path stroke-dasharray=".03, .97" d="M0,2h5M2,0v5"/>
+        <rect x="0" y="0" width="4" height="4" stroke-width=".1" fill="none"/>
+    </g>
+
+    <use xlink:href="#left"/>
+    <use xlink:href="#left" transform="translate(1)"/>
+    <use xlink:href="#left" transform="translate(2)"/>
+    <use xlink:href="#left" transform="translate(3)"/>
+
+    <use xlink:href="#right"/>
+    <use xlink:href="#right" transform="translate(0, 1)"/>
+    <use xlink:href="#right" transform="translate(0, 2)"/>
+    <use xlink:href="#right" transform="translate(0, 3)"/>
+
+</g>
+
+
+<g style="text-anchor: middle" font-size="50px" font-family="sans-serif" transform="translate(50, 57)" fill-opacity="0.5">
+    <g><text y="0">0</text><text y="100">1</text><text y="200">2</text><text y="300">3</text></g>
+    <g transform="translate(100)"><text y="0">8</text><text y="100">9</text><text y="200">10</text><text y="300">11</text></g>
+    <g transform="translate(200)"><text y="0">4</text><text y="100">5</text><text y="200">6</text><text y="300">7</text></g>
+    <g transform="translate(300)"><text y="0">12</text><text y="100">13</text><text y="200">14</text><text y="300">15</text></g>
+</g>
+
+
+<defs>
+
+    <path id="d0" d="M0,1h1v1H0"/>
+    <path id="d1" d="M0,0h1v3H0"/>
+
+    <g id="b0" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d0"/><use xlink:href="#d0" transform="translate(2)"/></g>
+    <g id="b1" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d0"/><use xlink:href="#d1" transform="translate(2)"/></g>
+    <g id="b2" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d1"/><use xlink:href="#d0" transform="translate(2)"/></g>
+    <g id="b3" transform="translate(0, .7) scale(.06, .06)"><use xlink:href="#d1"/><use xlink:href="#d1" transform="translate(2)"/></g>
+
+    <g id="left" transform="translate(.29)">
+        <use xlink:href="#b0"/>
+        <use xlink:href="#b2" transform="translate(0, 1)"/>
+        <use xlink:href="#b1" transform="translate(0, 2)"/>
+        <use xlink:href="#b3" transform="translate(0, 3)"/>
+
+    </g>
+
+    <g id="right" transform="translate(.53)">
+        <use xlink:href="#b0"/>
+        <use xlink:href="#b1" transform="translate(1)"/>
+        <use xlink:href="#b2" transform="translate(2)"/>
+        <use xlink:href="#b3" transform="translate(3)"/>
+    </g>
+
+</defs>
+
+
+</svg>

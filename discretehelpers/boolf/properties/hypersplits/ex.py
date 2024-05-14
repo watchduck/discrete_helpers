@@ -1,0 +1,2 @@
+class NotBlightlessError(ValueError):
+    pass

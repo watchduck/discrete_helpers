@@ -1,0 +1,14 @@
+
+|-
+|class="zhegalkin $zhegalkin_oddness $zhegalkin_font_size"| $zhegalkin
+|class="fraction num $fraction_font_size"| $vnum
+|class="fraction den $fraction_font_size"| $vden
+|class="fraction dec $vinterval"| $vdec
+|class="weight num reduced"| $wnum
+|class="weight den reduced"| $wden
+|class="weight dec $winterval"| $wdec
+|class="weight num unreduced"| $wnum_big
+|class="weight den unreduced"| $wden_big
+|class="arity"| $valency
+|class="bundles$unibundle_class"| $number_of_bundles
+|class="names"| $names_cell
