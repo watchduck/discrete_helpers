@@ -153,15 +153,15 @@ This is the corresponding matrix multiplication:
 mat134 = wp134.matrix(3)
 mat137 = wp137.matrix(3)
 
-np.dot(mat134, mat137)
-# array([[1, 2, 2],
-#        [0, 1, 1],
-#        [0, 0, 1]])
+assert np.array_equal(
+    np.dot(mat134, mat137) % 2,
+    (wp134 * wp137).matrix()
+)
 
-np.dot(mat137, mat134)
-# array([[1, 2, 1],
-#        [0, 1, 1],
-#        [0, 0, 1]])
+assert np.array_equal(
+    np.dot(mat137, mat134) % 2,
+    (wp137 * wp134).matrix()
+)
 ```
 
 The real matrix products contain entries 2. Modulo 2 they become 0.

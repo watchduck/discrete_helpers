@@ -2,9 +2,6 @@
 These are the falsophobe representatives of blightless BECs, that are not already defined before.<br>
 (Among the 4-ary functions only `gepofu` was defined before.)
 
-They have been created in script [`14_blightless_clan_representatives`](../../scripts/14_blightless_clan_representatives)
-and are stored in [`blightless_swan_reps`](../../scripts/store/blightless_swan_reps.py).
-
 These lists show the representatives of the 343 blightless 4-ary BECs:
 
 * 292 with **1** bundle:

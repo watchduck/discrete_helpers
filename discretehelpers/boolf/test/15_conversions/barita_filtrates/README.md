@@ -22,5 +22,3 @@ sigvar = [sigperm[i] + spread[sigperm[i]] for i in range(4)]  # [4, 1, 2, 5]
 The signed permutations and variations in these examples happen to be all unsigned.
 
 _Miniri_ and _sediri_ have valency 5, so the whole calculation is not feasible as a test.
-There is [this script](../../../scripts/10_conversions/miniri_sediri.py) instead.<br>
-[`miniri_sediri_test.py`](miniri_sediri_test.py) shows only examples taken from that calculation.

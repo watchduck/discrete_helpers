@@ -1,6 +1,6 @@
-<img src="discretehelpers/_img/Discrete_helpers_icon_framed.svg" width="150" align="right">
-
 # discrete helpers
+
+<img src="discretehelpers/_img/Discrete_helpers_icon_framed.svg" width="150" align="right">
 
 This project provides classes corresponding to concepts in discrete mathematics:
 

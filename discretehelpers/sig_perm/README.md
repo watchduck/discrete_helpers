@@ -10,16 +10,17 @@ from discretehelpers.perm import Perm
 
 sp = SigPerm(valneg={1, 2}, perm=[2, 0, 1])
 
-# sp == SigPerm(sequence=[~2, 0, ~1]) == SigPerm(matrix=[[ 0,  1,  0],
-#                                                        [ 0,  0, -1],
-#                                                        [-1,  0,  0]])
+assert sp == SigPerm(sequence=[~2, 0, ~1])
+assert sp == SigPerm(matrix=[[ 0,  1,  0],
+                             [ 0,  0, -1],
+                             [-1,  0,  0]])
 
-# sp.binv == Binv([0, 1, 1])
-# sp.perm == Perm([2, 0, 1])
+assert sp.binv == Binv([0, 1, 1])
+assert sp.perm == Perm([2, 0, 1])
 
-# sp.length == 3
+assert sp.length == 3
 
-# sp.inverse == SigPerm(sequence=[1, ~2, ~0])
+assert sp.inverse == SigPerm(sequence=[1, ~2, ~0])
 ```
 
 See also [tests](_test.py).
@@ -60,8 +61,8 @@ The images show a bijection between signed permutations of length _n_ and period
 The following code corresponds to the two inverses shown above:
 
 ```python
-# sp.schoute_perm == Perm([6, 2, 7, 3, 4, 0, 5, 1], perilen=8)
-# sp.inverse.schoute_perm == sp.schoute_perm.inverse == Perm([5, 7, 1, 3, 4, 6, 0, 2], perilen=8)
+assert sp.schoute_perm == Perm([6, 2, 7, 3, 4, 0, 5, 1], perilen=8)
+assert sp.inverse.schoute_perm == sp.schoute_perm.inverse == Perm([5, 7, 1, 3, 4, 6, 0, 2], perilen=8)
 ```
 
 ## products of unmoved and unsigned permutations

@@ -2,31 +2,26 @@
 
 Wikiversity: [Discrete helpers/set part](https://en.wikiversity.org/wiki/Discrete_helpers/set_part)
 
-```pycon
->>> from discretehelpers.set_part import SetPart
+```python
+from discretehelpers.set_part import SetPart
 
->>> sp = SetPart()
->>> sp.merge_pair(3, 5)
->>> sp.merge_many([7, 8, 9])
 
->>> sp
-SetPart([[3, 5], [7, 8, 9]])
->>> sp.blocks_with_singletons(10)
-[[0], [1], [2], [3, 5], [4], [6], [7, 8, 9]]
+sp = SetPart()
+sp.merge_pair(3, 5)
+sp.merge_many([7, 8, 9])
 
->>> sp.merge_pair(5, 7)
+assert sp == SetPart([[3, 5], [7, 8, 9]])
+assert sp.blocks_with_singletons(10) == [[0], [1], [2], [3, 5], [4], [6], [7, 8, 9]]
 
->>> sp
-SetPart([[3, 5, 7, 8, 9]])
->>> sp.blocks_with_singletons(10)
-[[0], [1], [2], [3, 5, 7, 8, 9], [4], [6]]
+sp.merge_pair(5, 7)
+
+assert sp == SetPart([[3, 5, 7, 8, 9]])
+assert sp.blocks_with_singletons(10) == [[0], [1], [2], [3, 5, 7, 8, 9], [4], [6]]
 ```
 
 Usually a partition is changed from fine to coarse with 
 [`merge_pair`](methods/merge_pair) or [`merge_many`](methods/merge_many),<br>
 but the reverse is possible with [`refine_block`](methods/refine_block).
-
-[Here](../boolf/scripts/12_intvals_partitioned_by_ec) is an example, where a set of Boolean functions is partioned into equivalence classes.
 
 ## Cayley tables
 

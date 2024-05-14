@@ -3,47 +3,34 @@
 Wikiversity: [Discrete helpers/perm](https://en.wikiversity.org/wiki/Discrete_helpers/perm)
 
 
-```pycon
->>> from discretehelpers.perm import Perm
+```python
+from discretehelpers.perm import Perm
 ```
 
 ## finite permutation
 
-```pycon
->>> cycles = [[0, 3, 2, 1], [4, 6]]
->>> sequence = [3, 0, 1, 2, 6, 5, 4]
+```python
+cycles = [[0, 3, 2, 1], [4, 6]]
+sequence = [3, 0, 1, 2, 6, 5, 4]
 
->>> p = Perm(cycles)
->>> ps = Perm(sequence)
->>> p == ps
-True
+p = Perm(cycles)
+assert p == Perm(sequence)
 
->>> p.length
-7
+assert p.length == 7
 
->>> p.cycles == cycles
-True
->>> p.sequence() == p.sequence(7) == sequence
-True
->>> p.sequence(10) == sequence + [7, 8, 9]
-True
+assert p.sequence() == p.sequence(7) == sequence
+assert p.sequence(10) == sequence + [7, 8, 9]
 
->>> p.moved  # number of moved elements
-{0, 1, 2, 3, 4, 6}
->>> p.mapping
-{0: 3, 3: 2, 2: 1, 1: 0, 4: 6, 6: 4}
+assert p.moved == {0, 1, 2, 3, 4, 6}
+assert p.mapping == {0: 3, 3: 2, 2: 1, 1: 0, 4: 6, 6: 4}
 
->>> p.order
-4
->>> p**2
-Perm([[0, 2], [1, 3]])
->>> p**3
-Perm([[0, 1, 2, 3], [4, 6]])
->>> p**4
-Perm()
+assert p.cycles == cycles
+assert p.order == 4
+assert p**2 == Perm([[0, 2], [1, 3]])
+assert p**3 == Perm([[0, 1, 2, 3], [4, 6]])
+assert p**4 == Perm()
 
->>> p.inverse == p**-1 == p**3
-True
+assert p.inverse == p**-1 == p**3
 ```
 
 Composition is from the left, i.e. `a * b` means `a` after `b`.<br>
@@ -55,10 +42,10 @@ See examples in the [tests](test), especially [here](test/02_concat/b_wiki_examp
 Most attributes are those of the smallest corresponding finite permutation.<br>
 The new attribute `perilen` is the period length.
 
-```pycon
+```python
 cycles = [[3, 4]]
->>> p5 = Perm(cycles, 5)
->>> p10 = Perm(cycles, 10)
+p5 = Perm(cycles, 5)
+p10 = Perm(cycles, 10)
 ```
 The results are `Perm([[3, 4]], perilen=5)` and `Perm([[3, 4]], perilen=10)`.<br>
 `perilen` is 5 and 10 respectively.<br>
@@ -71,9 +58,7 @@ These are the results of `p5.sequence(20)` and `p10.sequence(20)`:<br>
 
 Analogous to `sequence`, the method `cycles_dynamic` gives the cycles for multiples of the period length:
 
-```pycon
->>> p5.cycles_dynamic(20)
-[[3, 4], [8, 9], [13, 14], [18, 19]]
->>> p10.cycles_dynamic(20)
-[[3, 4], [13, 14]]
+```python
+assert p5.cycles_dynamic(20) == [[3, 4], [8, 9], [13, 14], [18, 19]]
+assert p10.cycles_dynamic(20) == [[3, 4], [13, 14]]
 ```

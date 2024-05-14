@@ -1,9 +1,8 @@
 # library
 
 
-`setuptools` is already in [requirements.txt](../requirements.txt).
-
 ``` 
+pip install setuptools
 pip install wheel
 pip install twine
 ```
