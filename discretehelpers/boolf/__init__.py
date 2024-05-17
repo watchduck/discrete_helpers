@@ -67,7 +67,7 @@ class Boolf(object):
         self.set_dummies()
 
     def set_dummies(self):
-        property_names = [
+        metribute_names = [
             'fullspotlinks_by_weight', 'number_of_fullspotlinks',
             'fullspots_by_weight', 'layered_fullspots', 'fullspot_weights',
             'faction_luckyrep', 'faction_luckyrep_binv', 'faction_luckyrep_fuzzyperm', 'faction_luckyrep_candidates',
@@ -85,11 +85,11 @@ class Boolf(object):
             'spots_by_weight', 'spot_weights',
             'diagonal_count'
         ]
-        for name in property_names:
+        for name in metribute_names:
             setattr(self, '_' + name, None)
 
     # While the dummies are set within `__init__()`, this section is outside of it.
-    from .properties import complement, atomvals_integer, atomvals_sierpinski, weight_fract, fullspots, \
+    from .metributes import complement, atomvals_integer, atomvals_sierpinski, weight_fract, fullspots, \
         splits, splits_overlap_counts, splits_equal, splits_onesided, splits_equality_blocks, \
         bloat, splits_preferred_side, number_of_distinct_splits, bloatless_boolf, bloat_boolf, bloatless_atomkeys_undeflated, \
         bundles, bundle_overlap_counts, bundle_grid_partitions, split_pairs_with_3_overlaps, gapless_boolf, \
@@ -155,7 +155,7 @@ class Boolf(object):
     from .methods.twin import twin
     from .methods.noble_quadrant import noble_quadrant
     from .methods.is_noble import is_noble
-    from .methods._qualities import is_sharp, is_acute, is_rude, is_rough, is_solid
+    from .methods._foibles import is_sharp, is_acute, is_rude, is_rough, is_solid
     from .methods._quadrant_extensions import weight_quadrant, acute_quadrant, octant
     from .methods.leader import leader
 

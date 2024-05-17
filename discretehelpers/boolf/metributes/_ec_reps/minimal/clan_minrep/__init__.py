@@ -1,5 +1,5 @@
 from functools import cached_property
-from discretehelpers.boolf.properties._ec_reps.minimal.clan_minrep.prototype import clan_minrep_prototype
+from discretehelpers.boolf.metributes._ec_reps.minimal.clan_minrep.prototype import clan_minrep_prototype
 
 from math import factorial
 from collections import defaultdict

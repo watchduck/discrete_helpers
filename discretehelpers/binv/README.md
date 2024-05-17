@@ -27,7 +27,7 @@ assert binv == Binv(intval=11, length=7)
 assert binv == Binv(exposet={0, 1, 3}, length=7)
 ```
 
-The property [`pretty`](properties/pretty.py) can be used when the length is a power of two up to 64.
+The metribute [`pretty`](metributes/pretty.py) can be used when the length is a power of two up to 64.
 See [tests](a/to_pretty_string/_test.py).
 ```python
 assert Binv(intval=38505).pretty == '1001 0110 0110 1001'

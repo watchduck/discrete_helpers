@@ -1,5 +1,5 @@
-This method is a wrapper around the property
-[`filtrated_pairs`](../../properties/filtrated_pairs).
+This method is a wrapper around the metribute
+[`filtrated_pairs`](../../metributes/filtrated_pairs).
 
 It orders pairs with the same truth table in a list.
 

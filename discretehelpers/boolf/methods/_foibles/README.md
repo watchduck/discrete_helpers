@@ -1,10 +1,10 @@
-# qualities
+# foibles (four methods)
 
-These are four methods. Compare the three [properties](../../properties/_qualities).<br>
-The qualities dependent on arity are _sharp_, _acute_, _rude_ and _rough_.
+Compare the [three metributes](../../metributes/_foibles).<br>
+The foibles dependent on arity are _sharp_, _acute_, _rude_ and _rough_.
 
-<a href="https://commons.wikimedia.org/wiki/File:Qualities_of_Boolean_functions.svg">
-    <img src="../../_img/Qualities_of_Boolean_functions.svg" width="300px">
+<a href="https://commons.wikimedia.org/wiki/File:Foibles_of_Boolean_functions.svg">
+    <img src="../../_img/Foibles_of_Boolean_functions.svg" width="300px">
 </a>
 
 ## acute

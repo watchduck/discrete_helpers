@@ -2,7 +2,7 @@ The filtrates (with names like _sed..._) are spread. The others are dense.<br>
 To avoid long calculations, the BECs of the filtrates are calculated with the dense equivalent.
 
 The signed variations to get the actual filtrate are then calculated with the help of the filtrate's 
-[`spread_vector`](../../../properties/spread_vector):
+[`spread_vector`](../../../metributes/spread_vector):
 
 ```python
 from discretehelpers.boolf.examples import gepofu, sedofu

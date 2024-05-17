@@ -24,7 +24,7 @@ assert schoute.sequence() == [0, 8, 1, 9, 2, 10, 3, 11, 4, 12, 5, 13, 6, 14, 7, 
 
 ## signed
 
-This property is inherited by [SigPerm](../../../sig_perm).<br>
+This metribute is inherited by [SigPerm](../../../sig_perm).<br>
 For a signed permutation it returns a permuted Schoute permutation.<br>
 It shall be called a signed Schoute permutation (although it is not signed).
 

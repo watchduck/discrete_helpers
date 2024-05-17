@@ -1,2 +1,2 @@
-This is a wrapper around the property [`filtrated_pairs`](../../properties/_basics/filtrated_pairs).<br>
+This is a wrapper around the metribute [`filtrated_pairs`](../../metributes/_basics/filtrated_pairs).<br>
 It allows ignoring the numerical order of both atomkeys.

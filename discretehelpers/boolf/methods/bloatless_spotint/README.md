@@ -19,4 +19,4 @@ The image below illustrates the examples in the test, e.g.:
     <img src="_img/tokosi_examples.svg">
 </a>
 
-[`blightless_spotint`](../blightless_spotint) extends this property.
+[`blightless_spotint`](../blightless_spotint) extends this metribute.

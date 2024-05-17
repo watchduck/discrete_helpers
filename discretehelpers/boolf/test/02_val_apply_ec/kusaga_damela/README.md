@@ -45,7 +45,7 @@ boolf.vals(2, 0, ~1) == boolf.val(c, a, ~b) == Binv('1011 1000')
 ```
 
 With non-negative arguments in natural order, the result equals the attribute `binv`
-(and if [dense](../../../properties/is_dense) also the method [`tt`](../../../methods/tt)).
+(and if [dense](../../../metributes/is_dense) also the method [`tt`](../../../methods/tt)).
 
 ## `apply`
 

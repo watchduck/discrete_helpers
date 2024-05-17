@@ -1,7 +1,7 @@
 # hyperfissions
 
-This is an extension of [fissions](../../properties/_fissions) to multiple dimensions.
-(While fissions are properties, these are methods.)
+This is an extension of [fissions](../../metributes/_fissions) to multiple dimensions.
+(While fissions are metributes, these are methods.)
 
 See [test](_test.py) for examples.
 

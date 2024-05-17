@@ -143,7 +143,7 @@ class SigPerm(Perm):
     def __pow__(self, exponent):
         pass
 
-    from .properties import inverse, sequence_minimal, \
+    from .metributes import inverse, sequence_minimal, \
         keyneg_index, valneg_index, perm_index, pair
 
     def sequence(self, length=None):

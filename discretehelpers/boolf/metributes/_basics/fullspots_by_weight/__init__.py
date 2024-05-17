@@ -63,7 +63,7 @@ def fullspot_weights(self):
     return self.fullspot_weights
 
 
-# function to create all properties ####################################################################################
+# function to create all metributes ####################################################################################
 def some_magic(self):
     result_detailed = defaultdict(dict)
     result_simple_raw = defaultdict(list)

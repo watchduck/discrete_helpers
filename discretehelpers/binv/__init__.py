@@ -89,10 +89,10 @@ class Binv(object):
         self.required_length = 0
 
     def set_dummies(self):
-        property_names = [
+        metribute_names = [
             'string', 'pretty', 'complement', 'length', 'weight', 'changes', 'intval', 'exposet', 'set_part'
         ]
-        for name in property_names:
+        for name in metribute_names:
             setattr(self, '_' + name, None)
 
     def flip_bit(self, position):
@@ -101,7 +101,7 @@ class Binv(object):
         vector[position] = not vector[position]
         return Binv(vector)
 
-    from .properties import string, pretty, complement, length, weight, changes, intval, exposet, set_part, reverse
+    from .metributes import string, pretty, complement, length, weight, changes, intval, exposet, set_part, reverse
 
     def has_index(self, key):  # basically like `__getitem__(key)`, but works also for keys beyond the length
         return key in self.exposet

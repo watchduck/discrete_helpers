@@ -43,7 +43,7 @@ def number_of_fullspotlinks(self):
     return self.number_of_fullspotlinks
 
 
-# function to create both properties
+# function to create both metributes
 def some_magic(self):
 
     weights = self.fullspot_weights

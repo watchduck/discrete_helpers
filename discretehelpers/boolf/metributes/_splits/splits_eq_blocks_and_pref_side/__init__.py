@@ -43,7 +43,7 @@ def splits_preferred_side(self):
     return self.splits_preferred_side
 
 
-# function to create both properties
+# function to create both metributes
 def some_magic(self):
 
     if self.is_constant:

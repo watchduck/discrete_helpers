@@ -46,7 +46,7 @@ class WalshPerm(Perm):
         self.perilen = 2 ** self.degree
 
         if not trust:
-            self.mapping  # just call property, because verification happens there
+            self.mapping  # just call metribute, because verification happens there
 
     def set_neutral(self):
         self.degree = 0
@@ -54,7 +54,7 @@ class WalshPerm(Perm):
         self.matrix_minimal = np.ones([0, 0], dtype=int)
         super(WalshPerm, self).set_neutral()
 
-    from .properties import moved, inverse, determinant, transpose, mapping, complement_distance
+    from .metributes import moved, inverse, determinant, transpose, mapping, complement_distance
     from .methods import matrix, vector, transpose_vector, complement_pattern
 
     def __str__(self):

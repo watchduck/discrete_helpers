@@ -1,6 +1,6 @@
 # Schoute coset
 
-The matrix whose rows are [Schoute permutations](../../perm/properties/schoute_perm) shall be called Schoute matrix.<br>
+The matrix whose rows are [Schoute permutations](../../perm/metributes/schoute_perm) shall be called Schoute matrix.<br>
 This is the passive S. m., showing the results of applying the permutations .
 
 <a href="https://commons.wikimedia.org/wiki/File:Consecutive_bit_permutations_24x16.svg">

@@ -36,7 +36,7 @@ assert wp == WalshPerm(perm=perm_finite)
 assert wp == WalshPerm(perm=perm_periodic)
 ```
 
-## properties
+## metributes
 
 ### wp(1, 3)
 

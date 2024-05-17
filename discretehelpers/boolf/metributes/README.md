@@ -1,8 +1,8 @@
-# properties
+# metributes (Python properties)
 
-Most properties use `@cached_property`.
+Most metributes use `@cached_property`.
 
-But there are some closely related properties, that use dummy variables, getters and setters:<br>
+But there are some closely related metributes, that use dummy variables, getters and setters:<br>
 
 * [_basics/fullspotlinks_by_weight](_basics/fullspotlinks_by_weight/__init__.py)
 * [_basics/fullspots_by_weight](_basics/fullspots_by_weight/__init__.py)

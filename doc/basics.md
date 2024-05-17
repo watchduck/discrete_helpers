@@ -51,3 +51,8 @@ from discretehelpers.set_part_comp import SetPartComp
 from discretehelpers.sig_perm import SigPerm
 from discretehelpers.walsh_perm import WalshPerm
 ```
+
+## terminology
+
+The term *property* is used generically &mdash; as one would in everyday language.<br>
+For Python properties the term *metribute* is used instead. (A portmanteau of *method* and *attribute*.)

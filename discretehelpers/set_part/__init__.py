@@ -46,7 +46,7 @@ class SetPart(object):
 
         self.set_dummies()
 
-    from .properties import pairs, intval, canonical_blocks_with_singletons, singletons
+    from .metributes import pairs, intval, canonical_blocks_with_singletons, singletons
 
     from .methods.blocks_with_singletons import blocks_with_singletons
     from .methods.merge_pair import merge_pair

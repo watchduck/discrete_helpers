@@ -1,4 +1,4 @@
-# attributes, properties and methods
+# attributes, metributes and methods
 
 ## attributes
 
@@ -9,13 +9,13 @@
 * `transpose_vector_object`
 * `degree`
 
-## properties
+## metributes
 
-* `mapping`: super attribute, [adapted](properties/mapping)
-* `order`: super property, inherited
-* `cycles`: super property, inherited
-* `inverse`: super property, [adapted](properties/inverse)
-* `moved`: super **attribute**, [adapted](properties/moved)
+* `mapping`: super attribute, [adapted](metributes/mapping)
+* `order`: super metribute, inherited
+* `cycles`: super metribute, inherited
+* `inverse`: super metribute, [adapted](metributes/inverse)
+* `moved`: super **attribute**, [adapted](metributes/moved)
 * `determinant`
 
 
@@ -40,7 +40,6 @@ Theoretically one could use the binary matrix to check if the Walsh permutation 
 It is, if the real determinant modulo 2 is 1.<br>
 But calculating a determinant does not always give and integer, where it should.
 
-In practice the verification happens in the property [mapping](properties/mapping).<br>
-To cause the verification, the property is called (without further effect) in the [`__init__`](__init__.py) method,<br>
+In practice the verification happens in the metribute [mapping](metributes/mapping).<br>
+To cause the verification, the metribute is called (without further effect) in the [`__init__`](__init__.py) method,<br>
 unless `WalshPerm` is initialized with `trust=True`. 
-

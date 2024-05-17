@@ -41,7 +41,7 @@ def splits_onesided(self):
     return self.splits_onesided
 
 
-# function to create both properties
+# function to create both metribute
 def some_magic(self):
 
     if self.valency == 0:

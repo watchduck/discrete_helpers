@@ -41,7 +41,7 @@ assert Boolf('1111 0101')           == Boolf('1101', [0, 2]) == Boolf(multi_or=[
  
 Valency is the number of arguments actually used.<br>
 Adicity follows from the biggest atom, and corresponds to the required length of the truth table.<br>
-(For a [dense](properties/is_dense) BF valency and adicity are equal.)<br>
+(For a [dense](metributes/is_dense) BF valency and adicity are equal.)<br>
 `Boolf('0001')` (_A and B_) has valency and adicity 2.<br>
 `Boolf('0000 0011')` (_B and C_) has valency 2 and adicity 3.<br>
 The term _arity_ is only used for arguments of methods, e.g. to calculate the [consul](methods/consul).

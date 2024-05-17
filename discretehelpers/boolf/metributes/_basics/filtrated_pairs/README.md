@@ -26,4 +26,4 @@ The methods
 [`atom_pair_subset`](../../methods/atom_pair_subset) 
 and 
 [`atom_pair_intersect`](../../methods/atom_pair_intersect)
-are shorthands using this property.
+are shorthands using this metribute.

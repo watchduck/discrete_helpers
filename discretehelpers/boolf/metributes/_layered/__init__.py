@@ -2,7 +2,7 @@ from discretehelpers.a import have
 from discretehelpers.boolf.a import flat_to_layered
 
 
-# main property (tuple of tuples)
+# main metribute (tuple of tuples)
 @property
 def layered_tt(self):
     return self._layered_tt
@@ -22,7 +22,7 @@ def layered_tt(self):
     return self.layered_tt
 
 
-# derived property (tuple of integers)
+# derived metribute (tuple of integers)
 @property
 def layered_weight(self):
     return self._layered_weight
@@ -43,7 +43,7 @@ def layered_weight(self):
 
 
 def some_magic(self):
-    """function to create 3 properties"""
+    """function to create 3 metributes"""
     vector = [int(_) for _ in self.dense_tt]
     self.layered_tt = flat_to_layered(vector)
     self.layered_weight = tuple([sum(_) for _ in self.layered_tt])

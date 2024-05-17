@@ -1,11 +1,11 @@
-# qualities
+# foibles (three metributes)
 
-These are the three properties. Compare the four [methods](../../methods/_qualities).<br>
-The qualities not dependent on arity are _odd_, _odious_ and _ugly_.<br>
+Compare the [four methods](../../methods/_foibles).<br>
+The foibles not dependent on arity are _odd_, _odious_ and _ugly_.<br>
 (And there is the sharpness of the dense truth table.)
 
-<a href="https://commons.wikimedia.org/wiki/File:Qualities_of_Boolean_functions.svg">
-    <img src="../../_img/Qualities_of_Boolean_functions.svg" width="300px">
+<a href="https://commons.wikimedia.org/wiki/File:Foibles_of_Boolean_functions.svg">
+    <img src="../../_img/Foibles_of_Boolean_functions.svg" width="300px">
 </a>
 
 ## odd &nbsp; (oddness)
@@ -42,4 +42,4 @@ A Boolean function is ugly, iff the first and last digit of its truth table are 
 
 ## dense is sharp
 
-Attribute `dense_tt` [is_sharp](../../methods/_qualities).
+Attribute `dense_tt` [is_sharp](../../methods/_foibles).

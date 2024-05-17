@@ -5,7 +5,7 @@ One can use a binary Walsh matrix instead, and the is always a Walsh function.<b
 It may be called _binary Walsh spectrum_, and the corresponding integer shall be called **consul**.<br>
 (Where it is convenient, the term may also be used for the Walsh function itself.)
 
-The consul is the integer part of the [twin](../twin) [prefect](../../properties/prefect).<br>
+The consul is the integer part of the [twin](../twin) [prefect](../../metributes/prefect).<br>
 (This requires, that consul and twin are calculated with the same arity.)
 
 One could also define a sign for the consul (like for the prefect),<br>

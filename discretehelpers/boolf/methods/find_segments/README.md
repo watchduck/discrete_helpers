@@ -46,7 +46,7 @@ The following geometric requirements can be used to add new segments, which may 
 * Each hypersplit must have at least one core segment. (If the respective borders cross, they must cross somewhere.)
 
 The first two are always easy. The last is easy, when the hypersplit has only one 
-[potential core segment](../../properties/hypersplits_potential_cores).<br>
+[potential core segment](../../metributes/hypersplits_potential_cores).<br>
 
 Hopefully, the additional requirement of connectedness will be fulfilled in the process.<br>
 (All cells must be connected. All walls in the same border must be connected.)

@@ -73,7 +73,7 @@ class Perm(object):
         self.perilen = None
         self.length = 0
 
-    from .properties import inverse, cycles, order, left_rank, right_rank, cycle_partition, \
+    from .metributes import inverse, cycles, order, left_rank, right_rank, cycle_partition, \
         inversion_set, parity, schoute_perm
 
     def __getitem__(self, arg):
