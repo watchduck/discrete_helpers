@@ -8,7 +8,7 @@ kusaga = Boolf(kusaga_binv)
 # clan 306
 damela_binv = Binv('1110 1000 0010 1011')
 damela_spread = Boolf(damela_binv, [10, 20, 30, 40])
-damela = damela_spread.dense_boolf
+damela = damela_spread.root_boolf
 
 # clan 8
 menose = Boolf('0110 0000')

@@ -7,7 +7,7 @@ from discretehelpers.binv import Binv
 
 def diagonal_adjacency_matrix(self, minus_places):
 
-    tt = self.dense_tt
+    tt = self.root
     valency = self.valency
     vertices = sorted(self.fullspots)
     size = len(vertices)

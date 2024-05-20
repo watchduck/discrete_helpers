@@ -59,13 +59,13 @@ def _subinit_truth_table(self):
         from discretehelpers.boolf.a import deflate
         binv, atomvals = deflate(binv, atomvals)
 
-    self.dense_tt = binv
+    self.root = binv
     self.atomvals = atomvals
     self.valency = len(atomvals)
     self.adicity = max(atomvals) + 1
 
     if skip_deflation:
         from discretehelpers.boolf import Boolf
-        self.is_inflated = Boolf(self.dense_tt).valency < self.valency
+        self.is_inflated = Boolf(self.root).valency < self.valency
 
     return True

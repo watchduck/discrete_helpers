@@ -14,14 +14,14 @@ def test_all():
 
     valency = x.valency  # 3
 
-    x_dense = x.dense_boolf
-    y_dense = y.dense_boolf
+    x_root = x.root_boolf
+    y_root = y.root_boolf
 
-    x_clan = x_dense.ec_clan()
-    y_clan = y_dense.ec_clan()
+    x_clan = x_root.ec_clan()
+    y_clan = y_root.ec_clan()
 
-    block_a = x_clan.get_block_from_label(y_dense)
-    block_b = y_clan.get_block_from_label(x_dense)
+    block_a = x_clan.get_block_from_label(y_root)
+    block_b = y_clan.get_block_from_label(x_root)
 
     assert block_a == [(1, 1), (1, 3), (2, 0), (2, 5), (4, 2), (4, 4)]
     assert block_b == [(2, 0), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5)]
@@ -48,8 +48,8 @@ def test_all():
         a = sigperms_a[i]
         b = sigperms_b[i]
 
-        assert x.apply(*a) == y_dense
-        assert y.apply(*b) == x_dense
+        assert x.apply(*a) == y_root
+        assert y.apply(*b) == x_root
 
         sigvar_a = sigvars_a[i]
         sigvar_b = sigvars_b[i]

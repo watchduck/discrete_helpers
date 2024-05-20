@@ -1,4 +1,4 @@
-The filtrates (with names like _sed..._) are spread. The others are dense.<br>
+The filtrates (with names like _sed..._) are spread. The others are roots.<br>
 To avoid long calculations, the BECs of the filtrates are calculated with the dense equivalent.
 
 The signed variations to get the actual filtrate are then calculated with the help of the filtrate's 
@@ -8,10 +8,10 @@ The signed variations to get the actual filtrate are then calculated with the he
 from discretehelpers.boolf.examples import gepofu, sedofu
 
 
-sedofu_dense = sedofu.dense_boolf
+sedofu_root = sedofu.root_boolf
 
 sigperm = [2, 0, 1, 3]
-# gepofu.apply(*sigperm) == sedofu_dense
+# gepofu.apply(*sigperm) == sedofu_root
 
 spread = sedofu.spread_vector  # [1, 1, 2, 2]
 

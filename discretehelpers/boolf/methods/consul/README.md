@@ -5,13 +5,10 @@ One can use a binary Walsh matrix instead, and the is always a Walsh function.<b
 It may be called _binary Walsh spectrum_, and the corresponding integer shall be called **consul**.<br>
 (Where it is convenient, the term may also be used for the Walsh function itself.)
 
-The consul is the integer part of the [twin](../twin) [prefect](../../metributes/prefect).<br>
-(This requires, that consul and twin are calculated with the same arity.)
-
+**The consul is the Walsh index of the [twin](../twin) [prefect](../../metributes/prefect).**<br>
 One could also define a sign for the consul (like for the prefect),<br>
 by multiplying with a _negated_ binary Walsh matrix.<br>
-But the sign would just be the weight oddness.
-
+But the sign would just be the sharpness ([is_sharp](../../methods/_foibles)).
 ----
 
 `consul` is a fast function. It takes for granted, that the binary Walsh spectrum is indeed a Walsh function.<br>
@@ -28,5 +25,5 @@ It takes the second optional argument `prefab_matrix`, which can be used to prov
 ----
 
 Families of truth tables with odd weight have every possible consul.<br>
-Families of truth tables with even weight have a unique.
+Families of truth tables with even weight have a unique consul.<br>
 Clans of truth tables with even weight have a unique consul weight.

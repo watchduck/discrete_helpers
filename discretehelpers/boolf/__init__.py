@@ -52,14 +52,14 @@ class Boolf(object):
         else:
             atom = arg
             vector = Binv('01')
-        self.dense_tt = vector
+        self.root = vector
         self.atomvals = [atom]
         self.valency = 1
         self.adicity = atom + 1
         self.set_dummies()
 
     def set_constant(self, val):
-        self.dense_tt = Binv([val])
+        self.root = Binv([val])
         self.atomvals = []
         self.valency = 0
         self.adicity = 0
@@ -96,19 +96,19 @@ class Boolf(object):
         onesided_atomkeys, onesided_is_universe, blight, blight_boolf, blightless_atomkeys, blightless_boolf,\
         is_bloatless, is_blightless, bloatless_atomkeys_deflated, \
         filtrated_pairs, hypersplits, hypersplits_detailed, \
-        is_bundle, is_dense, atom_to_crossing_atoms, \
-        dense_boolf, blot, blot_boolf, is_blotless, \
+        is_bundle, is_root, atom_to_crossing_atoms, \
+        root_boolf, blot, blot_boolf, is_blotless, \
         fullspot_atoms, fullspots_by_weight, fullspot_weights, layered_fullspots,\
         fullspotlinks_by_weight, number_of_fullspotlinks, spread_vector, \
         zhe, \
         layered_tt, layered_weight, is_symmetric, \
         hypersplits_potential_cores, symmetric_spots, perm_symmetry_partition, \
-        family_sharprep, family_minrep, faction_minrep, clan_minrep, \
+        family_malerep, family_minrep, faction_minrep, clan_minrep, \
         prefect_tt, prefect_boolf, prefect_walsh_and_oddness, prefect_leader_and_quadrant, \
         fissions, fissions_layered, fissions_weight, fissions_weight_layered, \
         fission_walsh_spectra, fission_walsh_spectra_abs, fission_walsh_spectra_layered, fission_walsh_spectra_layered_abs, \
         fission_walsh_spectra_zipped, fission_walsh_spectra_abs_zipped, \
-        is_odd, is_odious, is_ugly, dense_is_sharp, family_is_self_complementary, \
+        is_odd, is_odious, is_ugly, is_male, family_is_self_complementary, \
         is_linear, quadrant, reverse
 
     from .subinit_methods import _subinit_atom, _subinit_truth_table, _subinit_fullspots, _subinit_zhe, \
@@ -162,7 +162,7 @@ class Boolf(object):
     def __getitem__(self, key):
         key = key & self.atomvals_integer
         key = self.atomvals_sierpinski.index(key)
-        return self.dense_tt[key]
+        return self.root[key]
 
     def __eq__(self, other):
-        return self.dense_tt == other.dense_tt and self.atomvals == other.atomvals
+        return self.root == other.root and self.atomvals == other.atomvals

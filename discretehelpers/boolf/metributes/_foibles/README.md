@@ -2,7 +2,7 @@
 
 Compare the [four methods](../../methods/_foibles).<br>
 The foibles not dependent on arity are _odd_, _odious_ and _ugly_.<br>
-(And there is the sharpness of the dense truth table.)
+(And there is _male_.)
 
 <a href="https://commons.wikimedia.org/wiki/File:Foibles_of_Boolean_functions.svg">
     <img src="../../_img/Foibles_of_Boolean_functions.svg" width="300px">
@@ -40,6 +40,7 @@ XOR of oddness and odiousness.<br>
 A Boolean function is ugly, iff the first and last digit of its truth table are different.
 
 
-## dense is sharp
+## male
 
-Attribute `dense_tt` [is_sharp](../../methods/_foibles).
+Not among the seven foibles, but related to *sharp*.<br>
+A Boolean function is ugly, iff its root is sharp.

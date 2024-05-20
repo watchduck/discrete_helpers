@@ -64,22 +64,22 @@ def test_barita():
     av = [0, 2, 3, 5]  # ACDF (BE removed)
     filtrate = barita.filtrated_boolf(av)
     assert filtrate == Boolf('1111 1010 1100 1000', [0, 2, 3, 5])
-    dense = filtrate.dense_boolf
-    assert dense == putuki
+    frb = filtrate.root_boolf
+    assert frb == putuki
 
     av = [1, 2, 3, 4, 5]  # BCDEF (A removed), D vanishes
     filtrate = barita.filtrated_boolf(av)
     assert filtrate == Boolf('1111 1000 1000 1000', [1, 2, 4, 5])
-    dense = filtrate.dense_boolf
-    assert dense.vals(0, 3, 1, 2) == gepofu.dense_tt
-    assert gepofu.vals(0, 2, 3, 1) == dense.dense_tt
+    frb = filtrate.root_boolf
+    assert frb.vals(0, 3, 1, 2) == gepofu.root
+    assert gepofu.vals(0, 2, 3, 1) == frb.root
 
     av = [0, 2, 3, 4, 5]  # ACDEF (B removed)
     filtrate = barita.filtrated_boolf(av)
     assert filtrate == Boolf(fullspots={0, 1, 2, 3, 4, 6, 8, 9, 12, 16, 17, 20, 24, 25, 28}, atomvals=av)
-    dense = filtrate.dense_boolf
-    assert dense.vals(3, 4, 0, 1, 2) == miniri.dense_tt
-    assert miniri.vals(2, 3, 4, 0, 1) == dense.dense_tt
+    frb = filtrate.root_boolf
+    assert frb.vals(3, 4, 0, 1, 2) == miniri.root
+    assert miniri.vals(2, 3, 4, 0, 1) == frb.root
 
 
 def test_darimi():

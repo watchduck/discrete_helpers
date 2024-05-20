@@ -29,7 +29,7 @@ def _subinit_fullspots(self):
 
     from discretehelpers.binv import Binv
 
-    # dense truth table
+    # root
     length = 1 << len(atomvals)  # 2 ** len(atomvals)
     binv = Binv(exposet=fullspots, length=length)
 

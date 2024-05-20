@@ -37,10 +37,10 @@ from ._bundle.bundle_overlap_counts import bundle_overlap_counts
 from ._bundle.bundle_grid_partitions import bundle_grid_partitions
 from ._bundle.is_bundle import is_bundle
 
-from .is_dense import is_dense
+from .is_root import is_root
 from .atom_to_crossing_atoms import atom_to_crossing_atoms
 
-from .dense_boolf import dense_boolf
+from .root_boolf import root_boolf
 
 from ._basics.fullspot_atoms import fullspot_atoms
 from ._basics.fullspots_by_weight import fullspots_by_weight, fullspot_weights, layered_fullspots
@@ -55,14 +55,14 @@ from .hypersplits_potential_cores import hypersplits_potential_cores
 from .symmetric_spots import symmetric_spots
 from .perm_symmetry_partition import perm_symmetry_partition
 
-from ._ec_reps import family_sharprep, family_minrep, faction_minrep, clan_minrep
+from ._ec_reps import family_malerep, family_minrep, faction_minrep, clan_minrep
 
 from ._prefect import prefect_tt, prefect_boolf, prefect_walsh_and_oddness, prefect_leader_and_quadrant
 from ._fissions.fissions import fissions, fissions_layered
 from ._fissions.fission_walsh_spectra import fission_walsh_spectra, fission_walsh_spectra_abs, fission_walsh_spectra_layered, fission_walsh_spectra_layered_abs
 from ._fissions.fission_walsh_spectra_zipped import fission_walsh_spectra_zipped, fission_walsh_spectra_abs_zipped
 from ._fissions.fissions_weight import fissions_weight, fissions_weight_layered
-from ._foibles import is_odd, is_odious, is_ugly, dense_is_sharp
+from ._foibles import is_odd, is_odious, is_ugly, is_male
 from .family_is_self_complementary import family_is_self_complementary
 from .is_linear import is_linear
 from .quadrant import quadrant

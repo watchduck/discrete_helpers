@@ -6,7 +6,7 @@ from discretehelpers.boolf.examples import menose
 
 
 def test_menose():
-    assert menose.dense_tt == Binv('0110 0000')
+    assert menose.root == Binv('0110 0000')
     assert menose.atomvals == [0, 1, 2]
 
     assert menose.blot == SetPartComp([], {(-1, 2)})  # C is empty

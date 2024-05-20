@@ -12,7 +12,7 @@ def bloatless_boolf(self):
     if self.bloat_boolf == self:
         return Boolf('1')
     else:
-        major_binv = self.dense_tt
+        major_binv = self.root
         major_fullspots = major_binv.exposet
         minor_fullspots = set(self.bloatless_spotint(_) for _ in major_fullspots)
         minor_binv = Binv(exposet=minor_fullspots, length=2 ** self.number_of_distinct_splits)

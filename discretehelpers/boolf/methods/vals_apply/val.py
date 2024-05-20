@@ -17,7 +17,7 @@ def val(self, *args):
     if case_single:
         true_except(set(args).issubset({0, 1}), UnexpectedArgumentError)
         key = Binv(args).intval
-        return self.dense_tt[key]
+        return self.root[key]
 
     if case_multiple:
         vals_list = []

@@ -7,7 +7,7 @@ from discretehelpers.set_part import SetPart
 @cached_property
 def symmetric_spots(self):
 
-    boolf = self.dense_boolf
+    boolf = self.root_boolf
 
     spots = boolf.fullspots  # same as `self.fullspots`
 

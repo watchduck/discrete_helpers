@@ -7,6 +7,6 @@ def reverse(self):
     from discretehelpers.boolf import Boolf
 
     return Boolf(
-        self.dense_tt[::-1],
+        self.root[::-1],
         atomvals=self.atomvals
     )

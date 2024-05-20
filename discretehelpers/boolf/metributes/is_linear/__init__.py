@@ -8,7 +8,7 @@ from discretehelpers.a.walsh_function_to_index.ex import NotWalshRowError
 def is_linear(self):
 
     try:
-        linear_to_walsh_and_oddness(self.dense_tt)
+        linear_to_walsh_and_oddness(self.root)
         return True
     except NotWalshRowError:
         return False

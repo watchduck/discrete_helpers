@@ -14,7 +14,7 @@ def filtrated_boolf(self, small_atomvals):
     
     big_valency = self.valency
     big_length = 2 ** big_valency
-    big_truthtable = self.dense_tt
+    big_truthtable = self.root
 
     small_atomkeys = [big_atomvals.index(_) for _ in small_atomvals]
     small_valency = len(small_atomvals)

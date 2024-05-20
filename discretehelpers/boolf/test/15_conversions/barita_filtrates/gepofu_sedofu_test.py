@@ -6,12 +6,12 @@ from discretehelpers.sig_perm import SigPerm
 def test_all():
 
     valency = gepofu.valency
-    sedofu_dense = sedofu.dense_boolf
+    sedofu_root = sedofu.root_boolf
 
     gepofu_clan = gepofu.ec_clan()
-    sedofu_clan = sedofu_dense.ec_clan()
+    sedofu_clan = sedofu_root.ec_clan()
     
-    block_a = gepofu_clan.get_block_from_label(sedofu_dense)
+    block_a = gepofu_clan.get_block_from_label(sedofu_root)
     block_b = sedofu_clan.get_block_from_label(gepofu)
     
     assert block_a == [(0, 3), (0, 5), (0, 9), (0, 11), (0, 12), (0, 14), (0, 18), (0, 20)]
@@ -40,8 +40,8 @@ def test_all():
         a = sigperms_a[i]
         b = sigperms_b[i]
     
-        assert gepofu.apply(*a) == sedofu_dense
-        assert sedofu.apply(*b) == sedofu_dense.apply(*b) == gepofu
+        assert gepofu.apply(*a) == sedofu_root
+        assert sedofu.apply(*b) == sedofu_root.apply(*b) == gepofu
     
         sigvar = sigvars_a[i]
         assert gepofu.apply(*sigvar) == sedofu

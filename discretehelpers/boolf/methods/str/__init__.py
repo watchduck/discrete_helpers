@@ -2,8 +2,8 @@ def __str__(self):
 
     if self.valency <= 4:
 
-        pretty_tt = self.dense_tt.pretty
-        if self.is_dense:
+        pretty_tt = self.root.pretty
+        if self.is_root:
             atomvals_string = ''
         else:
             atomvals_string_raw = ', '.join([str(_) for _ in self.atomvals])
@@ -16,7 +16,7 @@ def __str__(self):
     fullspots = sorted(self.complement.fullspots) if show_tilda else sorted(self.fullspots)
     fullspots_string_raw = ', '.join([str(_) for _ in fullspots])
 
-    if self.is_dense:
+    if self.is_root:
         arity_or_atomvals = f'arity={self.adicity}'
     else:
         atomvals_string_raw = ', '.join([str(_) for _ in self.atomvals])

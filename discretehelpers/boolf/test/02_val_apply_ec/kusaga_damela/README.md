@@ -39,13 +39,13 @@ a = Binv('0101 0101')
 b = Binv('0011 0011')
 c = Binv('0000 1111')
 
-boolf.vals(0, 1, 2) == boolf.val(a, b, c) == Binv('1010 1100') == boolf.dense_tt == boolf.tt()
+boolf.vals(0, 1, 2) == boolf.val(a, b, c) == Binv('1010 1100') == boolf.root == boolf.tt()
 
 boolf.vals(2, 0, ~1) == boolf.val(c, a, ~b) == Binv('1011 1000')
 ```
 
 With non-negative arguments in natural order, the result equals the attribute `binv`
-(and if [dense](../../../metributes/is_dense) also the method [`tt`](../../../methods/tt)).
+(and if [root](../../../metributes/is_root) also the method [`tt`](../../../methods/tt)).
 
 ## `apply`
 

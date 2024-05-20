@@ -15,8 +15,8 @@ def test_constant():
     assert yay.is_constant and nope.is_constant
     assert yay.valency == nope.valency == 0
     assert yay.atomvals == nope.atomvals == []
-    assert yay.dense_tt == Binv('1')
-    assert nope.dense_tt == Binv('0')
+    assert yay.root == Binv('1')
+    assert nope.root == Binv('0')
     assert yay == Boolf(True)
     assert nope == Boolf(False)
 
@@ -66,7 +66,7 @@ def test_deflate():
 
     assert vinone.is_inflated
     assert not vinona.is_inflated
-    assert Boolf(vinone.dense_tt).dense_tt == vinona.dense_tt == Binv('1110')
+    assert Boolf(vinone.root).root == vinona.root == Binv('1110')
 
 
 def test_deflate_fullspots():

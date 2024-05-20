@@ -18,7 +18,7 @@ def dict_of_sets_to_dict_of_lists(dict_of_sets):
 def ec_clan_matrix(self):
     from discretehelpers.boolf import Boolf
 
-    true_except(self.is_dense, NotSpreadlessError)
+    true_except(self.is_root, NotSpreadlessError)
     
     clan = self.ec_clan()
 

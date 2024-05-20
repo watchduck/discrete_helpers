@@ -13,7 +13,7 @@ Within this file, the original binary expression is called "major" and that of t
 def bloatless_spotint(self, spotint):
 
     if self.is_constant:
-        return int(self.dense_tt[0])
+        return int(self.root[0])
 
     true_except(spotint < 2 ** self.valency, TooBigError)
     major_binv = Binv(intval=spotint, length=self.valency)

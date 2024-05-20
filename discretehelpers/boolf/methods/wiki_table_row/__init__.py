@@ -16,7 +16,7 @@ file_path = os.path.join(
 def wiki_table_row(self, names_cell):
 
     true_except(self.is_blightless, BlightError)
-    true_except(self.is_dense, SpreadError)
+    true_except(self.is_root, SpreadError)
 
     vfract = self.value_fract()
     wfract = self.weight_fract

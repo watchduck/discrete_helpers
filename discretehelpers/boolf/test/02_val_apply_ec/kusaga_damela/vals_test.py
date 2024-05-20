@@ -23,7 +23,7 @@ def test_kusaga():
     # mat 0 and 2, row 0
     m0_r0 = kusaga.vals(0, 1, 2, 3)  # A B C D
     m2_r0 = kusaga.vals(0, 2, 1, 3)  # A C B D
-    assert m0_r0 == m2_r0 == kusaga_binv == kusaga.dense_tt == kusaga.tt()
+    assert m0_r0 == m2_r0 == kusaga_binv == kusaga.root == kusaga.tt()
 
     # mat 0 and 2, row 3
     m0_r3 = kusaga.vals(~0, ~1, 2, 3)  # ~A ~B C D
@@ -39,25 +39,25 @@ def test_kusaga():
 def test_damela():
 
     # mat 0 and 2, rows 0 and 14
-    dense_m0_r0 = damela.vals(0, 1, 2, 3)  # A B C D
-    dense_m2_r0 = damela.vals(0, 2, 1, 3)  # A C B D
-    dense_m0_r14 = damela.vals(0, ~1, ~2, ~3)  # A ~B ~C ~D
-    dense_m2_r14 = damela.vals(0, ~2, ~1, ~3)  # A ~C ~B ~D
+    root_m0_r0 = damela.vals(0, 1, 2, 3)  # A B C D
+    root_m2_r0 = damela.vals(0, 2, 1, 3)  # A C B D
+    root_m0_r14 = damela.vals(0, ~1, ~2, ~3)  # A ~B ~C ~D
+    root_m2_r14 = damela.vals(0, ~2, ~1, ~3)  # A ~C ~B ~D
 
     spread_m0_r0 = damela_spread.vals(0, 1, 2, 3)  # A B C D
     spread_m2_r0 = damela_spread.vals(0, 2, 1, 3)  # A C B D
     spread_m0_r14 = damela_spread.vals(0, ~1, ~2, ~3)  # A ~B ~C ~D
     spread_m2_r14 = damela_spread.vals(0, ~2, ~1, ~3)  # A ~C ~B ~D
 
-    assert spread_m0_r0 == spread_m2_r0 == spread_m0_r14 == spread_m2_r14 == damela_binv == damela_spread.dense_tt \
-           == dense_m0_r0 == dense_m2_r0 == dense_m0_r14 == dense_m2_r14 \
-           == damela_binv == damela.dense_tt == damela.tt()  # but not `damela_spread.tt()`
+    assert spread_m0_r0 == spread_m2_r0 == spread_m0_r14 == spread_m2_r14 == damela_binv == damela_spread.root \
+           == root_m0_r0 == root_m2_r0 == root_m0_r14 == root_m2_r14 \
+           == damela_binv == damela.root == damela.tt()  # but not `damela_spread.tt()`
 
     # mat 9 and 11, rows 3 and 4
-    dense_m9_r3 = damela.vals(3, ~0, ~1, 2)  # D ~A ~B C
-    dense_m11_r3 = damela.vals(3, ~1, ~0, 2)  # D ~B ~A C
-    dense_m9_r4 = damela.vals(3, 0, 1, ~2)  # D A B ~C
-    dense_m11_r4 = damela.vals(3, 1, 0, ~2)  # D B A ~C
+    root_m9_r3 = damela.vals(3, ~0, ~1, 2)  # D ~A ~B C
+    root_m11_r3 = damela.vals(3, ~1, ~0, 2)  # D ~B ~A C
+    root_m9_r4 = damela.vals(3, 0, 1, ~2)  # D A B ~C
+    root_m11_r4 = damela.vals(3, 1, 0, ~2)  # D B A ~C
 
     spread_m9_r3 = damela_spread.vals(3, ~0, ~1, 2)  # D ~A ~B C
     spread_m11_r3 = damela_spread.vals(3, ~1, ~0, 2)  # D ~B ~A C
@@ -65,7 +65,7 @@ def test_damela():
     spread_m11_r4 = damela_spread.vals(3, 1, 0, ~2)  # D B A ~C
 
     assert spread_m9_r3 == spread_m11_r3 == spread_m9_r4 == spread_m11_r4 == \
-           dense_m9_r3 == dense_m11_r3 == dense_m9_r4 == dense_m11_r4 \
+           root_m9_r3 == root_m11_r3 == root_m9_r4 == root_m11_r4 \
            == Binv('0111 1110 0001 1000')
 
     abbrev(SarityMismatchError, [

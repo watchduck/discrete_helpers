@@ -12,4 +12,4 @@ def bloat_boolf(self):
     boolf_with_atom_places = self.bloat.boolf()
     selection_of_atom_places = boolf_with_atom_places.atomvals
     selection_of_atomvals = [self.atomvals[_] for _ in selection_of_atom_places]
-    return Boolf(boolf_with_atom_places.dense_tt, selection_of_atomvals)
+    return Boolf(boolf_with_atom_places.root, selection_of_atomvals)

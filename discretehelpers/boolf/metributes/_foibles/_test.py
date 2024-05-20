@@ -34,6 +34,6 @@ def test_ugly():
     assert Boolf('0111').is_ugly
 
 
-def test_dense_sharp():
-    assert Boolf('0').dense_is_sharp == Boolf('1001', [88, 99]).dense_is_sharp == Boolf('0101 0011', [77, 88, 99]).dense_is_sharp == False
-    assert Boolf('1').dense_is_sharp == Boolf('1011', [88, 99]).dense_is_sharp == Boolf('0101 0111', [77, 88, 99]).dense_is_sharp == True
+def test_male():
+    assert Boolf('0').is_male == Boolf('1001', [88, 99]).is_male == Boolf('0101 0011', [77, 88, 99]).is_male == False
+    assert Boolf('1').is_male == Boolf('1011', [88, 99]).is_male == Boolf('0101 0111', [77, 88, 99]).is_male == True

@@ -11,8 +11,8 @@ def leader(self, arity=None):
     if q == 0:
         return self
     elif q == 1:
-        return self.twin(arity).complement.twin(arity)  # partner (change least significant bit)
+        return self.twin(arity).complement.twin(arity)  # change LSB
     elif q == 2:
-        return self.complement.twin(arity).complement.twin(arity)  # partner of the complement
+        return self.complement.twin(arity).complement.twin(arity)  # change LSB of complement
     elif q == 3:
         return self.complement

@@ -44,6 +44,6 @@ def layered_weight(self):
 
 def some_magic(self):
     """function to create 3 metributes"""
-    vector = [int(_) for _ in self.dense_tt]
+    vector = [int(_) for _ in self.root]
     self.layered_tt = flat_to_layered(vector)
     self.layered_weight = tuple([sum(_) for _ in self.layered_tt])

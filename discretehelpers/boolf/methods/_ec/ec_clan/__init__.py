@@ -20,7 +20,7 @@ def ec_clan(self, arity=None, suppress_abbreviation=False):
             return part
         else:
             from discretehelpers.boolf import Boolf
-            fullspots = list(range(2 ** arity)) if self.dense_tt[0] else []
+            fullspots = list(range(2 ** arity)) if self.root[0] else []
             atomvals = list(range(arity))
             boolf = Boolf(fullspots=fullspots, atomvals=atomvals, skip_deflation=True)
             return boolf.ec_clan(arity, suppress_abbreviation)

@@ -32,4 +32,4 @@ def tt(self, arg=None):
 
     atomvals_integer = Binv(exposet=work_atomvals).intval
     atomvals_sierpinski = int_to_sierpinski_row(exposet=work_atomvals)
-    return Binv([self.dense_tt[atomvals_sierpinski.index(key & atomvals_integer)] for key in range(2 ** len(arg_atomvals_set))])
+    return Binv([self.root[atomvals_sierpinski.index(key & atomvals_integer)] for key in range(2 ** len(arg_atomvals_set))])

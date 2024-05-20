@@ -6,12 +6,12 @@ from discretehelpers.sig_perm import SigPerm
 def test_all():
 
     valency = putuki.valency
-    seduki_dense = seduki.dense_boolf
+    seduki_root = seduki.root_boolf
     
     putuki_clan = putuki.ec_clan()
-    seduki_clan = seduki_dense.ec_clan()
+    seduki_clan = seduki_root.ec_clan()
     
-    block_a = putuki_clan.get_block_from_label(seduki_dense)
+    block_a = putuki_clan.get_block_from_label(seduki_root)
     block_b = seduki_clan.get_block_from_label(putuki)
 
     assert block_a == block_b
@@ -37,8 +37,8 @@ def test_all():
     
         sigperm = sigperms[i]
 
-        assert putuki.apply(*sigperm) == seduki_dense
-        assert seduki.apply(*sigperm) == seduki_dense.apply(*sigperm) == putuki
+        assert putuki.apply(*sigperm) == seduki_root
+        assert seduki.apply(*sigperm) == seduki_root.apply(*sigperm) == putuki
     
         sigvar = sigvars[i]
         assert putuki.apply(*sigvar) == seduki

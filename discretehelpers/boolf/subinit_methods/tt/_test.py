@@ -32,13 +32,13 @@ def test_int():
 def test_skip():
     boolf = Boolf('1111', skip_deflation=True)
     assert boolf.atomvals == [0, 1]
-    assert boolf.dense_tt == Binv('1111')
+    assert boolf.root == Binv('1111')
     assert boolf.fullspots == {0, 1, 2, 3}
     assert boolf.is_inflated
     assert not boolf.is_constant  # not quite true, but acceptable
 
     boolf = Boolf('0110 0110', skip_deflation=True)
-    assert boolf.dense_tt == Binv('0110 0110')
+    assert boolf.root == Binv('0110 0110')
     assert boolf.atomvals == [0, 1, 2]
     assert boolf.is_inflated
 

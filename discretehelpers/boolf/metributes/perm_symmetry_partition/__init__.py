@@ -7,7 +7,7 @@ from discretehelpers.set_part import SetPart
 @cached_property
 def perm_symmetry_partition(self):
 
-    boolf = self.dense_boolf
+    boolf = self.root_boolf
     tt = boolf.tt(self.adicity)
 
     domain = list(range(2 ** self.adicity))
