@@ -55,7 +55,7 @@ from .hypersplits_potential_cores import hypersplits_potential_cores
 from .symmetric_spots import symmetric_spots
 from .perm_symmetry_partition import perm_symmetry_partition
 
-from ._ec_reps import family_malerep, family_minrep, faction_minrep, clan_minrep
+from ._ec_reps import family_malerep, family_minrep, faction_minrep, clan_minrep, _clan_minrep_prototype
 
 from ._prefect import prefect_tt, prefect_boolf, prefect_walsh_and_oddness, prefect_leader_and_quadrant
 from ._fissions.fissions import fissions, fissions_layered

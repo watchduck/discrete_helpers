@@ -4,16 +4,23 @@ Each Boolean function can be assigned a linear function, i.e. a Walsh function o
 The calculation is similar to that from an ANF to its Boolean function.<br>
 It uses a matrix of variadic XANDs rather than ANDs. (See the yellow matrices below.)
 
-The pair `prefect_index` is the respective row number and a boolean for negation.
+The pair `prefect_walsh_and_oddness` is the Walsh index and a boolean for negation.
+
+The Walsh index is the bitwise XOR of the binary exponents of the Zhegalkin index.
+(compare sequence [A261283](https://oeis.org/A261283))
 
 
 ## example Ж 123
 
 ```python
+from discretehelpers.boolf import Boolf
+from discretehelpers.binv import Binv
+
+
 boolf = Boolf('1011 0010')
-assert boolf.prefect == Boolf('0110', [0, 2])
-assert boolf.prefect.tt() == Binv('0101 1010')
-assert boolf.prefect_index == (5, False)
+assert boolf.prefect_boolf == Boolf('0110', [0, 2])
+assert boolf.prefect_tt == Binv('0101 1010')
+assert boolf.prefect_walsh_and_oddness == (5, False)
 ```
 
 <table>
@@ -39,8 +46,8 @@ assert boolf.prefect_index == (5, False)
 
 ```python
 boolf = Boolf('0111 0110')
-assert boolf.prefect == Boolf('1001 0110')
-assert boolf.prefect_index == (7, True)
+assert boolf.prefect_boolf == Boolf('1001 0110')
+assert boolf.prefect_walsh_and_oddness == (7, True)
 ```
 
 <table>

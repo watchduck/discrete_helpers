@@ -103,7 +103,7 @@ class Boolf(object):
         zhe, \
         layered_tt, layered_weight, is_symmetric, \
         hypersplits_potential_cores, symmetric_spots, perm_symmetry_partition, \
-        family_malerep, family_minrep, faction_minrep, clan_minrep, \
+        family_malerep, family_minrep, faction_minrep, clan_minrep, _clan_minrep_prototype, \
         prefect_tt, prefect_boolf, prefect_walsh_and_oddness, prefect_leader_and_quadrant, \
         fissions, fissions_layered, fissions_weight, fissions_weight_layered, \
         fission_walsh_spectra, fission_walsh_spectra_abs, fission_walsh_spectra_layered, fission_walsh_spectra_layered_abs, \
