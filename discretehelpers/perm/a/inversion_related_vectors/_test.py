@@ -1,7 +1,6 @@
-from discretehelpers.perm.a import right_inversion_count, right_inversion_count_to_permutation
 from discretehelpers.perm.a import (
     left_inversion_count, right_inversion_count, inversion_vector,
-    right_inversion_count_to_permutation, left_inversion_count_to_permutation,
+    left_inversion_count_to_permutation, right_inversion_count_to_permutation,
     inversion_set_to_count, inversion_set_to_permutation
 )
 
