@@ -30,7 +30,8 @@ from .inventory_partition import inventory_partition
 from .prime_factors import prime_factors
 from .is_power_of_two import is_power_of_two
 from .rev_colex_perms import rev_colex_perms
-from .int_to_perm import int_to_perm
+from .int_to_factoradic import int_to_factoradic
+from .int_to_perm import int_to_perm  # needs int_to_factoradic
 from .logic_str import logic_str, logic_str_vector
 from .logic_abs_increase import logic_abs_increase, logic_abs_increase_vector
 from .bin2svg import bin2svg
