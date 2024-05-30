@@ -33,7 +33,7 @@ There are general tests in folders like
 and specific tests like [a/logic_str/_test.py](../discretehelpers/a/logic_str/_test.py).<br>
 The names of files in these folders must be unique.<br>
 The name of a test function begins with (and sometimes is) `test`.<br>
-The number of tests passed should be at least **715**.
+The number of tests passed should be at least **718**.
 
 ```
 (env) me@my:~/Code/discrete_helpers$ pytest -x

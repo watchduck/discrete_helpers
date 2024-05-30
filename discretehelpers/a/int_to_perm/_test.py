@@ -1,15 +1,16 @@
-from discretehelpers.a import rev_colex_perms
-
 from discretehelpers.perm import Perm
 
-from . import int_to_perm
-
-
-perm_tuples = rev_colex_perms(4)
+from discretehelpers.a import int_to_perm
 
 
 def test():
-    assert int_to_perm(9) \
-           == int_to_perm(9, trusted_rev_colex_perms=perm_tuples) \
-           == Perm(perm_tuples[9]) \
-           == Perm([3, 0, 1, 2])
+
+    assert int_to_perm(0) == Perm()
+
+    assert int_to_perm(1) == Perm([1, 0])
+
+    assert int_to_perm(9) == Perm([3, 0, 1, 2])
+
+    assert int_to_perm(119) == Perm([4, 3, 2, 1, 0])
+
+    assert int_to_perm(21686) == Perm([0, 6, 4, 2, 1, 7, 5, 3])

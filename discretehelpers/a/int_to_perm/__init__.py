@@ -1,34 +1,14 @@
-from discretehelpers.a import is_natural, true_except, have
+from discretehelpers.perm import Perm
+from discretehelpers.a import is_natural, true_except, int_to_factoradic
+from discretehelpers.perm.a import left_inversion_count_to_permutation
 
 
-def int_to_perm(n, trusted_rev_colex_perms=None):
-
-    from discretehelpers.perm import Perm
+def int_to_perm(n):
 
     true_except(is_natural(n), ValueError)
 
-    #############################################################
+    left = int_to_factoradic(n)
 
-    if have(trusted_rev_colex_perms):
+    perm_sequence = left_inversion_count_to_permutation(left)
 
-        perm_tuples = trusted_rev_colex_perms
-
-    else:
-
-        from discretehelpers.a import rev_colex_perms
-        from math import factorial
-
-        length = 1
-        while True:
-            if n >= factorial(length):
-                length += 1
-            else:
-                break
-
-        perm_tuples = rev_colex_perms(length)
-
-    #############################################################
-
-    perm_tuple = perm_tuples[n]
-
-    return Perm(perm_tuple)
+    return Perm(perm_sequence)

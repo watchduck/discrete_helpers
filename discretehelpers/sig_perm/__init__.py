@@ -20,13 +20,12 @@ class SigPerm(Perm):
         perm=None, perm_index=None,
         pair=None,
         sequence=None, matrix=None,
-        schoute_perm=None,
-        trusted_rev_colex_perms=None
+        schoute_perm=None
     ):
 
         all_args = [
             valneg, valneg_index, keyneg, keyneg_index, perm, perm_index, pair,
-            sequence, matrix, schoute_perm, trusted_rev_colex_perms
+            sequence, matrix, schoute_perm
         ]
 
         if have(keyneg):
@@ -56,7 +55,7 @@ class SigPerm(Perm):
 
         if have(perm_index):
             from discretehelpers.a import int_to_perm
-            perm = int_to_perm(perm_index, trusted_rev_colex_perms)  # second argument can remain `None`
+            perm = int_to_perm(perm_index)
 
         ###################################################################################################
 
