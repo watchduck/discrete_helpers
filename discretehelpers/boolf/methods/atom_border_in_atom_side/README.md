@@ -1,8 +1,8 @@
 The arguments of this method are two atoms, whose borders do not intersect.<br>
-It tells if the **border** of `a` is in the obverse **side** of `b`.
+It tells if the border of `a` is within `b`.
 
 This is true, if `a` is a subset of `b`, and if the sets intersect.<br>
-See the following image. There are two rows with a red **border** in the green **area**.
+See the following image. There are two rows with a red border in the green area.
 
 <a href="https://commons.wikimedia.org/wiki/File:Intersections_of_two_sets_and_their_complements.svg">
     <img src="_img/noncrossing_splits.svg" width="400px">

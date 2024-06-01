@@ -12,21 +12,21 @@ def schoute_coset_gen(key_int, val_int, arity):
 
     universe = set(range(arity))
 
-    obverse_keys = int_to_exposet(key_int)
-    reverse_keys = sorted(universe.difference(set(obverse_keys)))
+    recto_keys = int_to_exposet(key_int)
+    verso_keys = sorted(universe.difference(set(recto_keys)))
 
-    obverse_vals = int_to_exposet(val_int)
-    reverse_vals = sorted(universe.difference(set(obverse_vals)))
+    recto_vals = int_to_exposet(val_int)
+    verso_vals = sorted(universe.difference(set(recto_vals)))
 
-    obverse_perms = permutations(obverse_vals)
-    reverse_perms = permutations(reverse_vals)
+    recto_perms = permutations(recto_vals)
+    verso_perms = permutations(verso_vals)
 
-    for obverse_perm, reverse_perm in product(obverse_perms, reverse_perms):
+    for recto_perm, reverse_perm in product(recto_perms, verso_perms):
         perm = [0] * arity
-        for i, val in enumerate(obverse_perm):
-            key = obverse_keys[i]
+        for i, val in enumerate(recto_perm):
+            key = recto_keys[i]
             perm[key] = val
         for i, val in enumerate(reverse_perm):
-            key = reverse_keys[i]
+            key = verso_keys[i]
             perm[key] = val
         yield from_factoradic(left_inversion_count(perm))

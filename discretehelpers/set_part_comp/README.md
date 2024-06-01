@@ -1,5 +1,7 @@
 # `SetPartComp` (set partition with complement)
 
+Wikiversity: [Discrete helpers/set part comp](https://en.wikiversity.org/wiki/Discrete_helpers/set_part_comp)
+
 Describes a set partition with a complement relationship between the blocks.
 
 - `equal_part` is a `SetPart` showing which elements are equal.

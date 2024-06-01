@@ -41,7 +41,7 @@ from .sort_cols_together import sort_cols_together
 from .swap_matrix_rows import swap_matrix_rows
 from .alphabet_subset import alphabet_subset
 from .balanced_ternary_vector_to_string import balanced_ternary_vector_to_string
-from .reverse_cartesean_product import reverse_cartesean_product
+from .inverse_cartesian_product import inverse_cartesian_product
 from .have_only import have_only
 from .type_like_int import type_like_int
 from .type_clean_int import type_clean_int

@@ -9,11 +9,11 @@ def spotints_to_splits(spotints, valency):
 
     splits = []
     for atomkey in range(valency):
-        pos_binv = binv & make_atompattern(atomkey, valency)
-        neg_binv = binv & make_atompattern(~atomkey, valency)
+        recto_binv = binv & make_atompattern(atomkey, valency)
+        verso_binv = binv & make_atompattern(~atomkey, valency)
         splits.append((
-            set(pos_binv.exposet),
-            set(neg_binv.exposet)
+            set(recto_binv.exposet),
+            set(verso_binv.exposet)
         ))
 
     return splits

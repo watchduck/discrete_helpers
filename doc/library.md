@@ -30,4 +30,4 @@ Run this command from root folder:<br>
 python setup.py bdist_wheel
 ```
 
-Then delete the build folder.
+Then delete the build folder. (Or don't. But the IDE will complain about duplicated code.)

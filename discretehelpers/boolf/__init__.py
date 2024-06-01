@@ -67,6 +67,7 @@ class Boolf(object):
         self.set_dummies()
 
     def set_dummies(self):
+        # These are the metributes, that do not use `@cached_property`.
         metribute_names = [
             'fullspotlinks_by_weight', 'number_of_fullspotlinks',
             'fullspots_by_weight', 'layered_fullspots', 'fullspot_weights',

@@ -1,5 +1,5 @@
-Documentation:
+Wikiversity:
 [5x5 grid](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/5x5_grid),
-[gapspots/5x5](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/gapspots/5x5)
+[gap_variants/5x5](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/gap_variants/5x5)
 and
-[gapspots/5x4](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/gapspots/5x4)
+[gap_variants/5x4](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/gap_variants/5x4)

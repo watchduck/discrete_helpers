@@ -1,7 +1,7 @@
 from itertools import product
 
 
-def reverse_cartesean_product(pairs):
+def inverse_cartesian_product(pairs):
 
     left_set = set()
     right_set = set()

@@ -2,4 +2,4 @@ To filtrate a Boolean function means to reduce its information about many sets t
 Graphically it means removing circles from the Euler diagram and treating all merged cells as true,
 if any of the component cells are true.
 
-Documentation: [filtrates](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/filtrates)
+Wikiversity: [filtrates](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/filtrates)

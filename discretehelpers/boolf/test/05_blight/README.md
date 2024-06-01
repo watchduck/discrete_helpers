@@ -1,1 +1,1 @@
-Documentation: [Studies of Euler diagrams/bloated](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/bloated)
+Wikiversity: [Studies of Euler diagrams/bloated](https://en.wikiversity.org/wiki/Studies_of_Euler_diagrams/bloated)

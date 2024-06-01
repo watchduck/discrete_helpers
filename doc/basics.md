@@ -39,8 +39,10 @@ The number of tests passed should be at least **718**.
 (env) me@my:~/Code/discrete_helpers$ pytest -x
 ```
 
+## circular imports
+
 Somehow the tests do not catch import errors that appear in the console.<br>
-Therefore the following includes have to be tested separately:
+Therefore the following includes have to be tested manually:
 
 ```
 from discretehelpers.binv import Binv
@@ -51,6 +53,10 @@ from discretehelpers.set_part_comp import SetPartComp
 from discretehelpers.sig_perm import SigPerm
 from discretehelpers.walsh_perm import WalshPerm
 ```
+
+There are other import problems that appear only in the console.<br>
+E.g. in the helper [int_to_perm](../discretehelpers/a/int_to_perm/__init__.py) the import of `Perm` must be in the function.
+
 
 ## terminology
 

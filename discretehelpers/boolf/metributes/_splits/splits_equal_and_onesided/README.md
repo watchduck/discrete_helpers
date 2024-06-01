@@ -1,3 +1,5 @@
+# splits equal and onesided
+
 `splits_equal` and `splits_onesided` are created in the same process.
 
 Both refer to `splits`, which is a list of length `valency`.

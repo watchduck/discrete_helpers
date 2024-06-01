@@ -69,24 +69,26 @@ def some_magic(self):
 
         else:  # set has duplicates, complements might be among them
 
-            front_atomkey = block[0]
-            back_atomkey = self.bloat.get_comp(front_atomkey)  # if there is a complement, None otherwise
+            recto_atomkey = block[0]
+            verso_atomkey = self.bloat.get_comp(recto_atomkey)  # if there is a complement, None otherwise
 
-            if not have(back_atomkey):  # no complement among duplicate sets - thus no need to choose
+            if not have(verso_atomkey):  # no complement among duplicate sets - thus no need to choose
 
                 preferred_sides.append(None)
 
             else:  # complement among duplicate sets - need to choose preferred side
 
-                split = self.splits[front_atomkey]
-                front_fullspots, back_fullspots = split
+                split = self.splits[recto_atomkey]
+                recto_fullspots, verso_fullspots = split
 
                 if set() in split:  # split is onesided
-                    prefer_front_condition = back_fullspots == set()  # prefer universe over empty side
+                    # prefer universe over empty side
+                    prefer_recto_condition = verso_fullspots == set()
                 else:  # split has fullspots on both sides
-                    prefer_front_condition = min(front_fullspots) < min(back_fullspots)  # prefer side with smallest spotint (essentially random choice)
+                    # prefer side with smallest spotint (essentially random choice)
+                    prefer_recto_condition = min(recto_fullspots) < min(verso_fullspots)
 
-                preferred_atomkey = front_atomkey if prefer_front_condition else back_atomkey
+                preferred_atomkey = recto_atomkey if prefer_recto_condition else verso_atomkey
                 preferred_sides.append(preferred_atomkey)
 
     ##########################################

@@ -1,3 +1,5 @@
+# splits
+
 A split is the generalization of a set, where it does not matter which side is considered the inside and which the complement.
 
 There are three ways two different splits can relate to each other:
@@ -23,5 +25,5 @@ The graphic shows only the cases where the splits are different. But there are a
 These other cases are shown in these images:
 [Category:3-ary Boolean functions; BEC; nesting analysis](https://commons.wikimedia.org/wiki/Category:3-ary_Boolean_functions;_BEC;_nesting_analysis)
 <br>
-They also appear in `boolf.test.04_splits_overlap_counts`.<br>
+They also appear in [`test.04_splits_overlap_counts`](../../../test/04_splits_overlap_counts).<br>
 (BEC 8 shows the cases **2e** and **2u**.)

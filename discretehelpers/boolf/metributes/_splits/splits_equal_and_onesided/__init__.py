@@ -63,14 +63,14 @@ def some_magic(self):
                 onesided_list[index1] = onesided_list[index2] = True
             elif count == 2:
                 # both sides of both splits
-                pos1, neg1 = self.splits[index1]
-                pos2, neg2 = self.splits[index2]
+                recto1, verso1 = self.splits[index1]
+                recto2, verso2 = self.splits[index2]
                 # A split is onesided, if only one side in non-empty.
                 # There are two possible cases:
                 # - Both splits are not onesided. In that case they are equal.
                 # - Only one of them is onesided. Then they are not equal.
-                uni1 = sum([bool(pos1), bool(neg1)]) == 1
-                uni2 = sum([bool(pos2), bool(neg2)]) == 1
+                uni1 = sum([bool(recto1), bool(verso1)]) == 1
+                uni2 = sum([bool(recto2), bool(verso2)]) == 1
                 onesided_list[index1] = uni1
                 onesided_list[index2] = uni2
                 are_equal = not uni1 and not uni2
