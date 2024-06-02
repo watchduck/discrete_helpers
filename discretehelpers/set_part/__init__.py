@@ -54,6 +54,7 @@ class SetPart(object):
     from .methods.block_labels import add_label_to_block, add_label_to_element, \
         get_label_from_block, get_label_from_element, get_block_from_label, get_block_from_element, merge_block_labels
     from .methods.refine_block import refine_block
+    from .methods.meet_and_join import meet, join, _meet_prototype
 
     def set_trivial(self):
         self.trivial = True
@@ -115,25 +116,6 @@ class SetPart(object):
             return type(element) == int
         else:
             return element in self.domain
-
-    def _combine(self, other, mode):
-        true_except(mode in ['join', 'meet'], ValueError)
-        true_except(self.domain == other.domain, DomainsNotEqualError)
-        if mode == 'join':
-            pairs = self.pairs.union(other.pairs)
-        elif mode == 'meet':
-            pairs = self.pairs.intersection(other.pairs)
-        result = SetPart([], self.domain)
-        if len(pairs) > 0:
-            for pair in pairs:
-                result.merge_pair(*pair)
-        return result
-
-    def join(self, other):
-        return self._combine(other, 'join')
-
-    def meet(self, other):
-        return self._combine(other, 'meet')
 
     def __le__(self, other):
         true_except(self.domain == other.domain, DomainsNotEqualError)
