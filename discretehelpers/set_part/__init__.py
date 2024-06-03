@@ -2,11 +2,11 @@ from bidict import bidict
 
 from discretehelpers.a import true_except, is_natural, have
 
-from .ex import DomainsNotEqualError, DomainNotSetLikeError
+from .ex import DomainsNotEqualError, DomainNotSetLikeError, DuplicateElementsError
 
 
 class SetPart(object):
-    
+
     def __init__(self, blocks=None, domain='N', block_labels=None):
 
         if domain not in ['N', 'Z']:
@@ -33,6 +33,10 @@ class SetPart(object):
         self.non_singleton_to_block_index = _
 
         self.non_singletons = set(self.non_singleton_to_block_index.keys())
+        true_except(
+            len(self.non_singletons) == sum([len(block) for block in self.blocks]),
+            DuplicateElementsError
+        )
 
         if self.domain == 'N':
             self.length = max(self.non_singletons) + 1
@@ -54,7 +58,7 @@ class SetPart(object):
     from .methods.block_labels import add_label_to_block, add_label_to_element, \
         get_label_from_block, get_label_from_element, get_block_from_label, get_block_from_element, merge_block_labels
     from .methods.refine_block import refine_block
-    from .methods.meet_and_join import meet, join, _meet_prototype
+    from .methods.meet_and_join import meet, join, meet_pairs, join_pairs
 
     def set_trivial(self):
         self.trivial = True

@@ -12,3 +12,7 @@ class DomainNotSetLikeError(TypeError):
 
 class DomainNotFiniteError(ValueError):
     """This works only when the domain is a finite set, not N or Z."""
+
+
+class DuplicateElementsError(ValueError):
+    """Each element can be in only one block."""
