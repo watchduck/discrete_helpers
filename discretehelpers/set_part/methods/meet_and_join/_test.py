@@ -47,11 +47,9 @@ cases = [
 def test(case):
     a, b, expected_meet, expected_join = [case[_] for _ in ['a', 'b', 'meet', 'join']]
 
-    assert a.meet_pairs(b) == expected_meet
-    assert a.join_pairs(b) == expected_join
-
     assert a.meet(b) == expected_meet
-    assert b.meet(a) == expected_meet
+    assert a._meet_prototype(b) == expected_meet
 
     assert a.join(b) == expected_join
-    assert b.join(a) == expected_join
+    assert a._join_prototype(b) == expected_join
+    assert a._join_prototype_improved(b) == expected_join

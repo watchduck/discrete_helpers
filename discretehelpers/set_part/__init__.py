@@ -58,7 +58,7 @@ class SetPart(object):
     from .methods.block_labels import add_label_to_block, add_label_to_element, \
         get_label_from_block, get_label_from_element, get_block_from_label, get_block_from_element, merge_block_labels
     from .methods.refine_block import refine_block
-    from .methods.meet_and_join import meet, join, meet_pairs, join_pairs
+    from .methods.meet_and_join import meet, join, _meet_prototype, _join_prototype, _join_prototype_improved
 
     def set_trivial(self):
         self.trivial = True

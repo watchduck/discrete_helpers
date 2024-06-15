@@ -6,7 +6,7 @@ Meet and join are methods that combine two partitions.
 * The meet ∧ is the coarsest partition finer than both. &nbsp; (greatest lower bound)
 * The join ∨ is the finest partition coarser than both. &nbsp; (least upper bound)
 
-The meet is easy to calculate. The join currently uses the metribute [pairs](../../metributes/pairs), which is expensive.
+The meet is easy to calculate. The join is complicated.
 
 ## example
 
